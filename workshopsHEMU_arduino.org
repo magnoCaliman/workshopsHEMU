@@ -12,13 +12,14 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
 
 *** 0.1 INSTALLATION
 - Visit https://www.arduino.cc/en/software
-- On the right, under *DOWNLOAD OPTIONS*, select the appropriate options for the operating system you're using:
+- Scrool down to *Arduino IDE*, select the appropriate options for the operating system you're using:
   - macOS: download and unzip the file, where you will find the ~Arduino.app~ program. Detailed info can be found [[https://www.arduino.cc/en/Guide/macOS][here]].
-  - Windows: use the option "Win 7 and newer" to download the ~.exe~ file. *DO NOT* use the "ZIP file" option. Runnig the ~.exe~ should give you a proper installation prompt (those where you click "next" several times...) as illustrated in the detailed guide [[https://www.arduino.cc/en/Guide/Windows][here]].
+  - Windows: use the option "Win 10 and newer" to download the ~.exe~ file. *DO NOT* use the "ZIP file" option. Runnig the ~.exe~ should give you a proper installation prompt (those where you click "next" several times...) as illustrated in the detailed guide [[https://www.arduino.cc/en/Guide/Windows][here]].
   - Linux: The installation method changes depending on your distribution. For Ubuntu based distributions, follow [[https://www.arduino.cc/en/Guide/Linux][this guide]].
 
-- If the installation was sucessfull you should now have a program called ~Arduino~ in your list of programs, which when opened looks [[https://support.content.office.net/nl-nl/media/e8c360e1-2b32-45db-b9d7-d43abc86af2f.png][like this]]. That means you are all set.
+- If the installation was sucessfull you should now have a program called ~Arduino~ in your list of programs, which when opened looks like this. That means you are all set.
 
+[[/img/ide.png]]
 
 * 1. BLINK
 1. Open a new Arduino IDE, delete everything, copy and paste the code below
