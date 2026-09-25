@@ -576,17 +576,17 @@ void loop()
 
 **** 7.1.1 NOTES
 - ~x = x + 1~ is mathematically untrue, but computationally valid
-- Iteration as a /gradual, self-referencing process/
+- Iteration as a /gradual, [[https://www.youtube.com/watch?v=u55XIK_4buI][self-referencing process]]/
   
 **** 7.1.2 MODS
 - How can you make it rise faster, and then restart?
-   - "Divide and conquer" 
+  - "Divide and conquer"
 
 *** 7.2 EXAMPLE 2
-- Don't forget your origins... The process of exploration is cumulative, where new techniques (such as iteration) can "unlock" new affordances from previous examples. 
+- Don't forget your origins... The process of exploration is cumulative, where new techniques or concepts (such as iteration) can "unlock" new affordances from previous examples. 
 #+begin_src c
-int pinSpeaker = 5;
-int baseFreq = 1000;
+int pinSpeaker = 7;
+int baseFreq = 800;
 int delayTime = 100;
 
 void setup()
@@ -609,7 +609,7 @@ void loop()
 
 - Even simpler...
 #+begin_src c
-int pinSpeaker = 5;
+int pinSpeaker = 7;
 int delayTime = 5;
 int i = 0;
 
@@ -618,17 +618,17 @@ void setup()
 
 void loop()
 {
-  i = i + 1;
-  
   tone(pinSpeaker, 100);
   tone(pinSpeaker, 100 + i);
+
+  i = i + 1;
 }
 #+end_src
 
 - Or noisier
 #+begin_src c
 int i = 0;
-int pinSpeaker = 5;
+int pinSpeaker = 7;
 int delayTime = 5;
 
 void setup()
@@ -636,20 +636,20 @@ void setup()
 
 void loop()
 {
-  i = i + 1;
-  
   tone(pinSpeaker, 100 + i);
   delay(delayTime);
   tone(pinSpeaker, 2000 - i);
   delay(delayTime);
+
+  i = i + 1;
 }
 #+end_src
 
 - Or like a quasi-[[https://en.wikipedia.org/wiki/Shepard_tone][Shepard tone]]
 #+begin_src c
-int pinSpeaker = 5;
+int pinSpeaker = 7;
 int delayTime = 5;
-int i = 0;
+float i = 0; //mind the data type!
 
 void setup()
 {}
@@ -666,8 +666,9 @@ void loop()
 #+end_src
 
 *** 7.3 EXAMPLE 3
+- Without running, what is going to happen here?
 #+begin_src c
-int pin = 5;
+int pin = 7;
 int freq = 100;
 int i = 0;
 
@@ -680,7 +681,7 @@ void loop()
 
   freq = freq - 1;
 
-  if (freq < 32)
+  if (freq < 32)  //where does 32 come from? RTFM!
   {
     freq = 100;
   }
@@ -693,6 +694,7 @@ void loop()
 
 *** 7.4 EXAMPLE 4
 - Modulate your modulators...
+  - Compare this to [[https://github.com/magnoCaliman/workshopsHEMU/blob/master/workshopsHEMU_arduino.org#53-example-3][example 3 on item 5.3]]
 #+begin_src c
 int pinSpeaker = 7;
 int randMin = 17000;
@@ -710,7 +712,7 @@ void loop()
 
 
 * 8. TUDO JUNTO E MISTURADO
-- This code uses all the concepts shown up untill now, applied to a single example. How?
+- This code uses all the concepts shown up until now, applied to a single example. How?
 
 #+BEGIN_SRC c 
 int pinSpeaker = 7;
