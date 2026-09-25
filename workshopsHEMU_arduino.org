@@ -72,7 +72,7 @@ void loop()
 *** 2.3 NOTES
 - ~void setup()~ and ~void loop()~
 - Functions & arguments
-- RTFM - https://www.arduino.cc/reference/en/
+- RTFM - https://docs.arduino.cc/language-reference/
 - Syntax conventions
 
 *** 2.4 MODS
@@ -360,7 +360,7 @@ void setup()
 
 void loop()
 {
-  int dur = random(20, 180);
+  long dur = random(20, 180);  //notice the data type of the variable
 
   tone(pinSpeaker, 65, dur);
   delay(delayTime);
@@ -452,11 +452,32 @@ void loop()
 - There are /only/ two possible answers for the "condition question": yes or no.
 
 ** 6.2 EXAMPLE 2
-#+BEGIN_SRC c
+- Why doesn't this seem to work?
+#+begin_src c
 int pinSpeaker = 7;
 int delayTime = 100;        
-int longDur = 150;      
-int shortDur = 40;
+
+void setup()
+{}
+
+void loop()
+{
+  int thisNumber = random(10);
+
+  if (thisNumber < 5) 
+  {
+    tone(pinSpeaker, 100, 50);
+    delay(250);
+  }
+} 
+#+end_src
+
+** 6.3 EXAMPLE 3
+#+BEGIN_SRC c
+int pinSpeaker = 7;
+int delayTime = 200;  
+int longDur = 100;      
+int shortDur = 20;
 
 void setup()
 {}
@@ -473,40 +494,42 @@ void loop()
     delay(delayTime);
     tone(pinSpeaker, 180, longDur);
     delay(delayTime);
-    tone(pinSpeaker, 120, longDur);
+    tone(pinSpeaker, 150, longDur);
     delay(delayTime);
   }
 
   if (dice >= 5)
   {
-    tone(pinSpeaker, 300, shortDur);
+    tone(pinSpeaker, 100, shortDur);
     delay(delayTime);
-    tone(pinSpeaker, 350, shortDur);
+    tone(pinSpeaker, 150, shortDur);
     delay(delayTime);
-    tone(pinSpeaker, 480, shortDur);
+    tone(pinSpeaker, 180, shortDur);
     delay(delayTime);
-    tone(pinSpeaker, 450, shortDur);
+    tone(pinSpeaker, 150, shortDur);
     delay(delayTime);
   }
 }
 #+END_SRC
 
-- Challenge: using the ~noTone()~ function, modify the previous example so that it instead of alternating between two sequences with different frequencies and durations, it alternates between one sequence and silence.
+- Challenges:
+  - Using the ~noTone()~ function, modify the previous example so that it instead of alternating between two sequences with different frequencies and durations, it alternates between one sequence and silence.
+  - Remove the hardcoded values for the duration (the ~longDur~ and ~shortDur~ variables) and make the logic for their values dependent solely on the time of the pause between notes.
 
-** 6.3 EXAMPLE 3
+** 6.4 EXAMPLE 4
 #+begin_src c
 int pinSpeaker = 7;
 int delayTime = 100;
-int baseFreq = 100;
 
 void setup()
 {}
 
 void loop()
 {
+  int baseFreq = 100;
   int dice = random(0, 10);
   
-  if (dice < 5)
+  if (dice < 2)
   {
     baseFreq = random(80, 300);  
   }
@@ -523,15 +546,14 @@ void loop()
 #+end_src
 
 - How can you change the probability of events?
+- Why no ~int baseFreq~ on line 14, but only ~baseFreq~?
 
 *** 6.3.1 NOTES
 - ~TRUE~ and ~FALSE~ logic
 - Syntax errors vs. logic errors
 - ~if~ statements as
-  - a) control structures that can dictate whether or not events will happen (making "informed decisions").
+  - a) /control structures/ that can dictate whether or not events will happen (making "informed decisions").
   - b) "invisible hands" that can modify values and modulate the entry points in your code
-
-
 
 * 7. ITERATION
 *** 7.1 EXAMPLE 1
