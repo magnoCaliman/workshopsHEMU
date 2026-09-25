@@ -17,7 +17,7 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
   - Windows: use the option "Win 10 and newer" to download the ~.exe~ file. *DO NOT* use the "ZIP file" option. Runnig the ~.exe~ should give you a proper installation prompt (those where you click "next" several times...) as illustrated in the detailed guide [[https://www.arduino.cc/en/Guide/Windows][here]].
   - Linux: The installation method changes depending on your distribution. For Ubuntu based distributions, follow [[https://www.arduino.cc/en/Guide/Linux][this guide]].
 
-- If the installation was sucessfull you should now have a program called ~Arduino~ in your list of programs, which when opened looks like this. That means you are all set.
+- If the installation was sucessfull you should now have a program called ~Arduino~ in your list of programs, which when opened looks something like this. That means you are all set.
 
 [[/img/ide.png]]
 
@@ -280,7 +280,7 @@ void loop()
   delay(delayTime);
   tone(pinSpeaker, baseFreq * 5/4);
   delay(delayTime);
-  tone(pinSpeaker, baseFreq * 18/16);
+  tone(pinSpeaker, baseFreq * 9/8);
   delay(delayTime);
   tone(pinSpeaker, baseFreq);
   delay(delayTime);
