@@ -290,11 +290,11 @@ void loop()
 ** 4.4 MODS
 - How can we make the duration of the sound proportional to the duration of the pause? For example, always half? Or 90%?
   
-- How can we recreate the example 2 from [[https://github.com/magnoCaliman/workshopRAPP/blob/master/workshopRAPP_git.org#33-example-2][item 3.3]], but now using variables that /describe the logic/ of how our sequence of frequencies?
+- How can we recreate the example 2 from [[https://github.com/magnoCaliman/workshopRAPP/blob/master/workshopRAPP_git.org#33-example-2][item 3.3]] but now using variables that /describe the logic/ of how our sequence of frequencies? Is there more than one way of doing it?
 
 ** 4.5 TO THINK...
 - Variables allows us to create /logic/ around a piece of /data/ in our program.
-  - Change the way we navigate the /layers of abstraction/ of our material.
+  - Changes the way we navigate the /layers of abstraction/ of our material.
 
 
 * 5. ~random()~
