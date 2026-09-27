@@ -1,0 +1,62 @@
+* INTRO
+*magno.caliman@orpheusinstituut.be*
+
+WHY "THE POSSIBILITIES ARE ENDLESS" IS A FALSE STATEMENT; OR, HOW TECHNOLOGY IS NEVER NEUTRAL
+
+# #+BEGIN_COMMENT
+# * DUMP
+
+From Arduino workshop tomorrow:
+#+begin_quote
+[Arduino is an] ecosystem (*circuitry + programming language + IDE*) that allows us to create logic to interface/control hardware and software
+#+end_quote
+
+- Arduino "triangle"
+  - Reconfigurability && modularity
+  - Inherent to programming && electronics (and therefore to the products of those mediums)
+
+//
+
+- The "*STACK*"
+
+#+begin_src sonicpi
+sample "/home/magno/googleDrive/Minhas_Tralhas/Aulas/HEMU/gitWorkshopsHEMU/assets/notaPiano.wav"
+#+end_src
+
+#+begin_src supercollider
+s.boot
+
+~mySample = Buffer.read(s, '/home/magno/googleDrive/Minhas_Tralhas/Aulas/HEMU/gitWorkshopsHEMU/assets/notaPiano.wav')
+
+~mySample.play
+#+end_src
+
+- For fun, check [[file:assets/audioPlayer.c][audioPlayer.c]]
+  - Compile with ~gcc audioPlayer.c -o audioPlayer~
+  - Run with ~padsp ./audioPlayer~
+
+- Max ~sfplay~~ [[https://docs.cycling74.com/legacy/max8/refpages/sfplay~][documentation]] vs. pd ~tabread4~~ as looping sampler (pd's built-in example B08) and wavetable oscillator (B03). Deep down (or not so deep), they are the same thing. 
+  - Johannes Kreidler - https://www.youtube.com/watch?v=qpAz8zXvnww
+
+- The action of playing a digital sound file in a computer is, in itself, a universe.
+- There's always a stack (aka, the possibilities are /not/ endless). Choosing where to position yourself is part of the toolbox of compositional /technique/.
+  
+//
+  
+- /LEDWork/
+  - check ~./../HEMU/videoExamples~
+  - check ~LEDWork_FARM-2025_reaperSession.rpp~
+
+- /squareFuck/
+
+- Decision making between /black box/ <=> /stack/
+  - Each decision is made in negotiation with a non-neutral aspect of the technology.
+  - The stack is vertical, but projects itself horizontally.
+
+//
+
+- Practical proposition:
+  - "Peel the onion" exercise: list technologies you are using. Let's break their stack down.
+  - Find the hidden layers of abstraction, the points of negotiation.
+
+#+END_COMMENT
