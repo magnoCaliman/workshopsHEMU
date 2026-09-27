@@ -739,9 +739,7 @@ void loop()
 }
 #+END_SRC
 
-#+BEGIN_COMMENT
 
-* DUMP
+* COMMENT DUMP
 foo
 
-#+END_COMMENT
