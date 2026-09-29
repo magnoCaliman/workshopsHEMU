@@ -43,12 +43,12 @@ s.boot
   
 - /LEDWork/
   - see ~./../HEMU/videoExamples~
-  - see ~LEDWork_FARM-2025_reaperSession.rpp~
-\
+  - see ~LEDWork_FARM-2025_reaperSession.rpp~ \
+
 - /squareFuck/
   - see ~registro/testes~
-  - see ~squareFuck_overkill_render.mov~
-\
+  - see ~squareFuck_overkill_render.mov~ \
+
 - Decision making between /black box/ <=> /stack/
   - Each decision is made in negotiation with some aspect of the technology. The stack is vertical, but projects itself horizontally.
   - Technology exists as a cultural artefact, which you are in dialog with -- aka, technology is /never/ neutral.
