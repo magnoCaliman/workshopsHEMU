@@ -1,4 +1,4 @@
-* INTRO
+** INTRO
 *magno.caliman@orpheusinstituut.be*
 
 WHY "THE POSSIBILITIES ARE ENDLESS" IS A FALSE STATEMENT; OR, HOW TECHNOLOGY IS NEVER NEUTRAL
@@ -15,9 +15,7 @@ From Arduino workshop tomorrow:
   - Reconfigurability && modularity
   - Inherent to programming && electronics (and therefore to the products of those mediums)
 
-//
-
-* The "stack"
+** The "stack"
 
 #+begin_src sonicpi
 sample "/home/magno/googleDrive/Minhas_Tralhas/Aulas/HEMU/gitWorkshopsHEMU/assets/notaPiano.wav"
@@ -41,7 +39,7 @@ s.boot
 - The action of playing a digital sound file in a computer is, in itself, a universe.
 - There's always a stack (aka, the possibilities are /not/ endless). Choosing where to position yourself is part of the toolbox of compositional /technique/.
   
-* In practice...
+** In practice...
   
 - /LEDWork/
   - see ~./../HEMU/videoExamples~
@@ -55,7 +53,7 @@ s.boot
   - Each decision is made in negotiation with some aspect of the technology. The stack is vertical, but projects itself horizontally.
   - Technology exists as a cultural artefact, which you are in dialog with - a.k.a, technology is /never/ neutral.
 
-* Your practice!
+** Your practice!
 
 - Practical proposition:
   - "Peel the onion" exercise: list technologies you are using in some of your current work. Let's break their stack down.
