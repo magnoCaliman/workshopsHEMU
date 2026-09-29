@@ -1,7 +1,7 @@
 ** INTRO
 *magno.caliman@orpheusinstituut.be*
 
-WHY "THE POSSIBILITIES ARE ENDLESS" IS A FALSE STATEMENT; OR, HOW TECHNOLOGY IS NEVER NEUTRAL
+_WHY "THE POSSIBILITIES ARE ENDLESS" IS A FALSE STATEMENT; OR, HOW TECHNOLOGY IS NEVER NEUTRAL_
 
 # #+BEGIN_COMMENT
 # * DUMP
@@ -43,7 +43,7 @@ s.boot
   
 - /LEDWork/
   - see ~./../HEMU/videoExamples~
-  - see ~LEDWork_FARM-2025_reaperSession.rpp~ </br>
+  - see ~LEDWork_FARM-2025_reaperSession.rpp~
 
 - /squareFuck/
   - see ~registro/testes~

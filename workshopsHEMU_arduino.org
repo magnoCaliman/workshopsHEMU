@@ -21,6 +21,7 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
 
 [[./assets/ide.png]]
 
+
 * 1. BLINK
 1. Open a new Arduino IDE, delete everything, copy and paste the code below
 2. Select the correct board and port in ~Tools -> Board~ and ~Tools -> Port~
@@ -555,6 +556,7 @@ void loop()
   - a) /control structures/ that can dictate whether or not events will happen (making "informed decisions").
   - b) "invisible hands" that can modify values and modulate the entry points in your code
 
+
 * 7. ITERATION
 *** 7.1 EXAMPLE 1
 #+BEGIN_SRC c
@@ -738,8 +740,3 @@ void loop()
   }
 }
 #+END_SRC
-
-
-* COMMENT DUMP
-foo
-
