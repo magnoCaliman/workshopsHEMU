@@ -43,8 +43,8 @@ s.boot
   
 - /LEDWork/
   - see ~./../HEMU/videoExamples~
-  - see ~LEDWork_FARM-2025_reaperSession.rpp~
-\newline
+  - see ~LEDWork_FARM-2025_reaperSession.rpp~ \\
+
 - /squareFuck/
   - see ~registro/testes~
   - see ~squareFuck_overkill_render.mov~
