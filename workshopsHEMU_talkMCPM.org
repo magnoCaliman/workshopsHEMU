@@ -37,13 +37,13 @@ s.boot
   - Johannes Kreidler - https://www.youtube.com/watch?v=qpAz8zXvnww
 
 - The action of playing a digital sound file in a computer is, in itself, a universe.
-- There's always a stack informing your decisions (aka, the possibilities are /not/ endless). Choosing where to position yourself, and managing that dialog, is part of the toolbox of compositional /technique/.
+- There's always a stack informing your decisions -- aka, the possibilities are /not/ endless. Choosing how to position yourself, is part of the toolbox of compositional /technique/.
   
 ** IN PRACTICE...
   
 - /LEDWork/
   - see ~./../HEMU/videoExamples~
-  - see ~LEDWork_FARM-2025_reaperSession.rpp~ \\
+  - see ~LEDWork_FARM-2025_reaperSession.rpp~
 
 - /squareFuck/
   - see ~registro/testes~
@@ -51,7 +51,7 @@ s.boot
 
 - Decision making between /black box/ <=> /stack/
   - Each decision is made in negotiation with some aspect of the technology. The stack is vertical, but projects itself horizontally.
-  - Technology exists as a cultural artefact, which you are in dialog with -- aka, technology is /never/ neutral.
+  - Technology exists as a cultural artefact, which you are in dialog with -- aka, technology is /never/ neutral. Managing that dialog, is also part of the toolbox of compositional /technique/.
 
 ** YOUR PRACTICE!
 
