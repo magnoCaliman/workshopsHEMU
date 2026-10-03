@@ -1,0 +1,919 @@
+
+# Table of Contents
+
+1.  [0. Arduino?](#org48ec711)
+        1.  [0.1 INSTALLATION](#org272fad9)
+2.  [1. BLINK](#org6dbd414)
+        1.  [1.1 EXAMPLE](#orgd542abc)
+        2.  [1.2 NOTES](#org1c4fe10)
+        3.  [1.3 MODS](#org3c16df0)
+3.  [2. `tone()`](#orgcaf3eda)
+        1.  [2.1 CIRCUIT](#org5f2b978)
+        2.  [2.2 EXAMPLE](#orgadcea95)
+        3.  [2.3 NOTES](#org4994674)
+        4.  [2.4 MODS](#orgfed4c86)
+        5.  [2.5 TO THINK&#x2026;](#orge9ddec0)
+4.  [3. `delay()`](#org7529cb9)
+    1.  [3.1 EXAMPLE 1](#org59f0f5b)
+    2.  [3.2 MODS](#orgcca8326)
+    3.  [3.3 EXAMPLE 2](#org762e75e)
+    4.  [3.4 NOTES](#org6249367)
+    5.  [3.5 TO THINK&#x2026;](#orgddebb2d)
+5.  [4. VARIABLES](#org8440319)
+    1.  [4.1 EXAMPLE 1](#org94a2765)
+        1.  [4.1.2 NOTES](#orgb04b6dd)
+        2.  [4.1.3 MODS](#org08754b6)
+    2.  [4.2 EXAMPLE 2](#orgce47b99)
+    3.  [4.3 EXAMPLE 3](#orgb635854)
+    4.  [4.4 MODS](#orge52f4e0)
+    5.  [4.5 TO THINK&#x2026;](#org9d66dcd)
+6.  [5. `random()`](#org911acc6)
+        1.  [5.1 EXAMPLE 1](#org610982b)
+        2.  [5.2 EXAMPLE 2](#org68cb10e)
+        3.  [5.3 EXAMPLE 3](#org3b23541)
+7.  [And now, for something completely different&#x2026;](#orge843653)
+8.  [6. `if()`](#orgc27b56e)
+    1.  [6.1 EXAMPLE 1](#orgdfa4b25)
+        1.  [6.1.1 NOTES](#orgcb92b10)
+    2.  [6.2 EXAMPLE 2](#org25987ea)
+    3.  [6.3 EXAMPLE 3](#org8ea3514)
+    4.  [6.4 EXAMPLE 4](#org3bb2ff7)
+        1.  [6.3.1 NOTES](#org65089c5)
+9.  [7. ITERATION](#org37db41b)
+        1.  [7.1 EXAMPLE 1](#orgafa17f9)
+        2.  [7.2 EXAMPLE 2](#orgb084670)
+        3.  [7.3 EXAMPLE 3](#org6bfa850)
+        4.  [7.4 EXAMPLE 4](#orgfe8169a)
+10. [8. TUDO JUNTO E MISTURADO](#org45bca9e)
+
+
+<a id="org48ec711"></a>
+
+# 0. Arduino?
+
+-   What is it?
+    -   <https://www.arduino.cc/>
+
+Ecosystem (circuitry + programming language + IDE) that allows us to create logic to interface/control hardware and software
+
+-   What can you make?
+    -   Coin slot detector: <https://www.instructables.com/id/coin-slot-detector/>
+    -   Geiger counter: <https://www.instructables.com/Arduino-DIY-Geiger-Counter/>
+    -   Beat slicer: <https://vimeo.com/45422593>
+    -   Cabinet of Curiosness: <https://youtu.be/JCiXV6b7N0A>
+
+
+<a id="org272fad9"></a>
+
+### 0.1 INSTALLATION
+
+-   Visit <https://www.arduino.cc/en/software>
+-   Scrool down to **Arduino IDE**, select the appropriate options for the operating system you're using:
+    -   macOS: download and unzip the file, where you will find the `Arduino.app` program. Detailed info can be found [here](https://www.arduino.cc/en/Guide/macOS).
+    -   Windows: use the option "Win 10 and newer" to download the `.exe` file. **DO NOT** use the "ZIP file" option. Runnig the `.exe` should give you a proper installation prompt (those where you click "next" several times&#x2026;) as illustrated in the detailed guide [here](https://www.arduino.cc/en/Guide/Windows).
+    -   Linux: The installation method changes depending on your distribution. For Ubuntu based distributions, follow [this guide](https://www.arduino.cc/en/Guide/Linux).
+
+-   If the installation was sucessfull you should now have a program called `Arduino` in your list of programs, which when opened looks something like this. That means you are all set.
+
+![img](./assets/ide.png)
+
+
+<a id="org6dbd414"></a>
+
+# 1. BLINK
+
+1.  Open a new Arduino IDE, delete everything, copy and paste the code below
+2.  Select the correct board and port in `Tools -> Board` and `Tools -> Port`
+3.  Save the file
+4.  Upload it
+
+
+<a id="orgd542abc"></a>
+
+### 1.1 EXAMPLE
+
+    int pinLed = 13;
+    
+    void setup()
+    {
+      pinMode(pinLed, OUTPUT);
+    }
+    
+    void loop()
+    {
+      digitalWrite(pinLed, HIGH);
+      delay(1000);
+      digitalWrite(pinLed, LOW);
+      delay(500);  
+    }
+
+
+<a id="org1c4fe10"></a>
+
+### 1.2 NOTES
+
+-   Folder structure
+-   Naming conventions
+
+
+<a id="org3c16df0"></a>
+
+### 1.3 MODS
+
+-   What are you able to change in this code? What are your *entry points*?
+
+
+<a id="orgcaf3eda"></a>
+
+# 2. `tone()`
+
+
+<a id="org5f2b978"></a>
+
+### 2.1 CIRCUIT
+
+![img](./assets/tone_02.png)
+
+
+<a id="orgadcea95"></a>
+
+### 2.2 EXAMPLE
+
+    void setup()
+    {}
+    
+    void loop()
+    {
+      tone(5, 100);
+    }
+
+
+<a id="org4994674"></a>
+
+### 2.3 NOTES
+
+-   `void setup()` and `void loop()`
+-   Functions & arguments
+-   RTFM - <https://docs.arduino.cc/language-reference/>
+-   Syntax conventions
+
+
+<a id="orgfed4c86"></a>
+
+### 2.4 MODS
+
+-   From `tone()` reference: "Only one tone can be generated at a time"
+    -   Can you do this then?
+
+    void setup()
+    {}
+    
+    void loop()
+    {
+      tone(5, 40); 
+      tone(5, 41);
+    }
+
+
+<a id="orge9ddec0"></a>
+
+### 2.5 TO THINK&#x2026;
+
+-   Attitude towards the experience
+    -   Manipulation of *processes* not *materials*
+    -   "[action] the outcome of which is unknown"
+    -   [Conditional Design Manifesto](https://conditionaldesign.org/manifesto/)
+-   How does this attitude impacts your creative decisions?
+
+
+<a id="org7529cb9"></a>
+
+# 3. `delay()`
+
+
+<a id="org59f0f5b"></a>
+
+## 3.1 EXAMPLE 1
+
+    void setup()
+    {}
+    
+    void loop()
+    {
+      tone(5, 100);
+      delay(200);
+      tone(5, 200);
+      delay(200);
+    }
+
+-   Remember the 0<sup>th</sup> rule of programming: **RTFM!**
+    -   What arguments is the `delay()` function expecting?
+
+
+<a id="orgcca8326"></a>
+
+## 3.2 MODS
+
+-   From `tone()` reference, under *Parameters*
+    -   "`duration`: the duration of the tone in milliseconds (optional)"
+-   Then why doesn't this work?
+
+    void setup()
+    {}
+    
+    void loop()
+    {
+      tone(5, 100, 50);
+    }
+
+
+<a id="org762e75e"></a>
+
+## 3.3 EXAMPLE 2
+
+-   With that, we have a proto-[sequencer](https://www.youtube.com/watch?v=aXTT8jUhoAg)
+
+    void setup()
+    {}
+    
+    void loop()
+    {
+      tone(5, 100, 30); // now with three arguments
+      delay(100);       // and comments!
+      tone(5, 200, 30);
+      delay(100);
+      tone(5, 300, 30);
+      delay(100);
+      tone(5, 400, 30);
+      delay(100);
+    }
+
+-   What frequency values to choose?
+    -   Rational ratios (double, half, 1/3, etc)
+    -   Arithmetic and geometric sequences
+    -   Musical pitches: <http://pages.mtu.edu/~suits/notefreqs.html>
+    -   Numbers really close together
+    -   Numbers really far apart
+    -   Any value!
+
+
+<a id="org6249367"></a>
+
+## 3.4 NOTES
+
+-   Comments
+-   Amount of arguments
+-   Order/execution time
+
+
+<a id="orgddebb2d"></a>
+
+## 3.5 TO THINK&#x2026;
+
+-   Parameters are the same a traditional score: pitch, onset of attack, and duration. But with (at least) two differences:
+    -   Different representation system for parameters: Hz vs. pitch && milliseconds vs. rhythm.
+    -   Different affordances from the system: you can't ask a pianist to play two notes 10 milliseconds apart.
+-   There's a *non-transparency of the medium*. Engaging with the same material through a different mediator can reveal new things.
+
+
+<a id="org8440319"></a>
+
+# 4. VARIABLES
+
+
+<a id="org94a2765"></a>
+
+## 4.1 EXAMPLE 1
+
+-   Stranger tempo&#x2026;
+    -   <https://www.youtube.com/watch?v=-RcPZdihrp4>
+-   Seems slow. How can we fix it?
+
+    void setup()
+    {}
+    
+    void loop()
+    {
+      tone(5, 65);
+      delay(250);
+      tone(5, 82);
+      delay(250);
+      tone(5, 98);
+      delay(250);
+      tone(5, 123);
+      delay(250);
+      tone(5, 130);
+      delay(250);
+      tone(5, 123);
+      delay(250);
+      tone(5, 98);
+      delay(250);
+      tone(5, 82);
+      delay(250);
+    }
+
+-   There's your problem&#x2026;
+
+    int delayTime = 180;
+    
+    void setup()
+    {}
+    
+    void loop()
+    {
+      tone(5, 65);
+      delay(delayTime);
+      tone(5, 82);
+      delay(delayTime);
+      tone(5, 98);
+      delay(delayTime);
+      tone(5, 123);
+      delay(delayTime);
+      tone(5, 130);
+      delay(delayTime);
+      tone(5, 123);
+      delay(delayTime);
+      tone(5, 98);
+      delay(delayTime);
+      tone(5, 82);
+      delay(delayTime);
+    }
+
+
+<a id="orgb04b6dd"></a>
+
+### 4.1.2 NOTES
+
+-   "Box with a tag" analogy
+-   Naming conventions
+
+
+<a id="org08754b6"></a>
+
+### 4.1.3 MODS
+
+-   How can you change speaker to pin 7?
+
+
+<a id="orgce47b99"></a>
+
+## 4.2 EXAMPLE 2
+
+    int pinSpeaker = 7;
+    int baseFreq = 300;
+    int delayTime = 100;
+    
+    void setup()
+    {}
+    
+    void loop()
+    {
+      tone(pinSpeaker, baseFreq, 90);
+      delay(delayTime);
+      tone(pinSpeaker, baseFreq + 100, 90);
+      delay(delayTime);
+      tone(pinSpeaker, baseFreq + 200, 90);
+      delay(delayTime);
+      tone(pinSpeaker, baseFreq + 150, 90);
+      delay(delayTime);
+    }
+
+-   *Simbolic* representation of information
+    -   Does the line `tone(pinSpeaker, baseFreq + 100, 90);` changes the value of the variable `baseFreq`? What's the value of `baseFreq` at line 12? And 14?
+
+
+<a id="orgb635854"></a>
+
+## 4.3 EXAMPLE 3
+
+-   For the math/tunning afficionados
+
+    int pinSpeaker = 7;
+    float baseFreq = 100;
+    int delayTime = 150;
+    
+    void setup()
+    {}
+    
+    void loop()
+    {
+      tone(pinSpeaker, baseFreq);
+      delay(delayTime);
+      tone(pinSpeaker, baseFreq * 2);
+      delay(delayTime);
+      tone(pinSpeaker, baseFreq * 3/2);
+      delay(delayTime);
+      tone(pinSpeaker, baseFreq * 5/4);
+      delay(delayTime);
+      tone(pinSpeaker, baseFreq * 9/8);
+      delay(delayTime);
+      tone(pinSpeaker, baseFreq);
+      delay(delayTime);
+    }
+
+
+<a id="orge52f4e0"></a>
+
+## 4.4 MODS
+
+-   How can we make the duration of the sound proportional to the duration of the pause? For example, always half? Or 90%?
+
+-   How can we recreate the example 2 from [item 3.3](https://github.com/magnoCaliman/workshopsHEMU/blob/master/workshopsHEMU_arduino.org#33-example-2) but now using variables that *describe the logic* of how our sequence of frequencies? Is there more than one way of doing it?
+
+
+<a id="org9d66dcd"></a>
+
+## 4.5 TO THINK&#x2026;
+
+-   Variables allows us to create *logic* around a piece of *data* in our program.
+    -   Changes the way we navigate the *layers of abstraction* of our material.
+
+
+<a id="org911acc6"></a>
+
+# 5. `random()`
+
+
+<a id="org610982b"></a>
+
+### 5.1 EXAMPLE 1
+
+    int pinSpeaker = 7;
+    int delayTime = 100;
+    
+    void setup()
+    {}
+    
+    void loop()
+    {
+      tone(pinSpeaker, random(100, 500), 90);
+      delay(delayTime);
+    }
+
+1.  5.1.1 NOTES
+
+    -   Functions as arguments for other functions
+        -   Modularity as a principle
+    -   Numeric value as an abstraction
+
+
+<a id="org68cb10e"></a>
+
+### 5.2 EXAMPLE 2
+
+-   Without running, can you imagine the difference in behaviour between these two examples?
+
+-   
+
+    int pinSpeaker = 7;
+    int delayTime = 180;
+    
+    void setup()
+    {}
+    
+    void loop()
+    {
+      tone(pinSpeaker, 65, random(20, 180));
+      delay(delayTime);
+      tone(pinSpeaker, 82, random(20, 180));
+      delay(delayTime);
+      tone(pinSpeaker, 98, random(20, 180));
+      delay(delayTime);
+      tone(pinSpeaker, 123, random(20, 180));
+      delay(delayTime);
+      tone(pinSpeaker, 130, random(20, 180));
+      delay(delayTime);
+      tone(pinSpeaker, 123, random(20, 180));
+      delay(delayTime);
+      tone(pinSpeaker, 98, random(20, 180));
+      delay(delayTime);
+      tone(pinSpeaker, 82, random(20, 180));
+      delay(delayTime);
+    }
+
+1.  
+
+    int pinSpeaker = 7;
+    int delayTime = 180;
+    
+    void setup()
+    {}
+    
+    void loop()
+    {
+      long dur = random(20, 180);  //notice the data type of the variable
+    
+      tone(pinSpeaker, 65, dur);
+      delay(delayTime);
+      tone(pinSpeaker, 82, dur);
+      delay(delayTime);
+      tone(pinSpeaker, 98, dur);
+      delay(delayTime);
+      tone(pinSpeaker, 123, dur);
+      delay(delayTime);
+      tone(pinSpeaker, 130, dur);
+      delay(delayTime);
+      tone(pinSpeaker, 123, dur);
+      delay(delayTime);
+      tone(pinSpeaker, 98, dur);
+      delay(delayTime);
+      tone(pinSpeaker, 82, dur);
+      delay(delayTime);
+    }
+
+1.  5.2.1 NOTES
+
+    -   You can only acess a piece of data once you store it somewhere.
+
+
+<a id="org3b23541"></a>
+
+### 5.3 EXAMPLE 3
+
+-   Noise!
+
+    int pinSpeaker = 7;
+    
+    void setup()
+    {}
+    
+    void loop()
+    {
+      tone(pinSpeaker, random(40, 20000));
+    }
+
+-   Filtered noise!
+
+    int pinSpeaker = 7;
+    
+    void setup()
+    {}
+    
+    void loop()
+    {
+      tone(pinSpeaker, random(100, 400));
+    }
+
+
+<a id="orge843653"></a>
+
+# And now, for something completely different&#x2026;
+
+    int pinSpeaker = 7;
+    
+    void setup()
+    {}
+    
+    void loop()
+    {
+      tone(pinSpeaker, analogRead(A0));  
+    } 
+
+
+<a id="orgc27b56e"></a>
+
+# 6. `if()`
+
+
+<a id="orgdfa4b25"></a>
+
+## 6.1 EXAMPLE 1
+
+    int pinSpeaker = 7;
+    int delayTime = 100;        
+    
+    void setup()
+    {}
+    
+    void loop()
+    {
+      int thisNumber = 5;
+    
+      if (thisNumber < 7) 
+      {
+        tone(pinSpeaker, 100, 50);
+        delay(250);
+      }
+    } 
+
+
+<a id="orgcb92b10"></a>
+
+### 6.1.1 NOTES
+
+-   There are *only* two possible answers for the "condition question": yes or no.
+
+
+<a id="org25987ea"></a>
+
+## 6.2 EXAMPLE 2
+
+-   Why doesn't this seem to work?
+
+    int pinSpeaker = 7;
+    int delayTime = 100;        
+    
+    void setup()
+    {}
+    
+    void loop()
+    {
+      int thisNumber = random(10);
+    
+      if (thisNumber < 5) 
+      {
+        tone(pinSpeaker, 100, 50);
+        delay(250);
+      }
+    } 
+
+
+<a id="org8ea3514"></a>
+
+## 6.3 EXAMPLE 3
+
+    int pinSpeaker = 7;
+    int delayTime = 200;  
+    int longDur = 100;      
+    int shortDur = 20;
+    
+    void setup()
+    {}
+    
+    void loop()
+    {
+      int dice = random(0, 10);
+    
+      if (dice < 5)
+      {
+        tone(pinSpeaker, 100, longDur);
+        delay(delayTime);
+        tone(pinSpeaker, 150, longDur);
+        delay(delayTime);
+        tone(pinSpeaker, 180, longDur);
+        delay(delayTime);
+        tone(pinSpeaker, 150, longDur);
+        delay(delayTime);
+      }
+    
+      if (dice >= 5)
+      {
+        tone(pinSpeaker, 100, shortDur);
+        delay(delayTime);
+        tone(pinSpeaker, 150, shortDur);
+        delay(delayTime);
+        tone(pinSpeaker, 180, shortDur);
+        delay(delayTime);
+        tone(pinSpeaker, 150, shortDur);
+        delay(delayTime);
+      }
+    }
+
+-   Challenges:
+    -   Using the `noTone()` function, modify the previous example so that it instead of alternating between two sequences with different frequencies and durations, it alternates between one sequence and silence.
+    -   Remove the hardcoded values for the duration (the `longDur` and `shortDur` variables) and make the logic for their values dependent solely on the time of the pause between notes.
+
+
+<a id="org3bb2ff7"></a>
+
+## 6.4 EXAMPLE 4
+
+    int pinSpeaker = 7;
+    int delayTime = 100;
+    
+    void setup()
+    {}
+    
+    void loop()
+    {
+      int baseFreq = 100;
+      int dice = random(0, 10);
+    
+      if (dice < 2)
+      {
+        baseFreq = random(80, 300);  
+      }
+    
+      tone(pinSpeaker, baseFreq, 90);
+      delay(delayTime);
+      tone(pinSpeaker, baseFreq + 100, 90);
+      delay(delayTime);
+      tone(pinSpeaker, baseFreq + 200, 90);
+      delay(delayTime);
+      tone(pinSpeaker, baseFreq + 150, 90);
+      delay(delayTime);
+    } 
+
+-   How can you change the probability of events?
+-   Why no `int baseFreq` on line 14, but only `baseFreq`?
+
+
+<a id="org65089c5"></a>
+
+### 6.3.1 NOTES
+
+-   `TRUE` and `FALSE` logic
+-   Syntax errors vs. logic errors
+-   `if` statements as
+    -   a) *control structures* that can dictate whether or not events will happen (making "informed decisions").
+    -   b) "invisible hands" that can modify values and modulate the entry points in your code
+
+
+<a id="org37db41b"></a>
+
+# 7. ITERATION
+
+
+<a id="orgafa17f9"></a>
+
+### 7.1 EXAMPLE 1
+
+    int pinSpeaker = 7;
+    int freq = 40;
+    
+    void setup()
+    {}
+    
+    void loop()
+    {
+      tone(pinSpeaker, freq);
+    
+      freq = freq + 1;
+    
+      delay(500);
+    }
+
+1.  7.1.1 NOTES
+
+    -   `x = x + 1` is mathematically untrue, but computationally valid
+    -   Iteration as a *gradual, [self-referencing process](https://www.youtube.com/watch?v=u55XIK_4buI)*
+
+2.  7.1.2 MODS
+
+    -   How can you make it rise faster, and then restart?
+        -   "Divide and conquer"
+
+
+<a id="orgb084670"></a>
+
+### 7.2 EXAMPLE 2
+
+-   Don't forget your origins&#x2026; The process of exploration is cumulative, where new techniques or concepts (such as iteration) can "unlock" new affordances from previous examples.
+
+    int pinSpeaker = 7;
+    int baseFreq = 800;
+    int delayTime = 100;
+    
+    void setup()
+    {}
+    
+    void loop()
+    {
+      tone(pinSpeaker, baseFreq, 90);
+      delay(delayTime);
+      tone(pinSpeaker, baseFreq + 100, 90);
+      delay(delayTime);
+      tone(pinSpeaker, baseFreq + 200, 90);
+      delay(delayTime);
+      tone(pinSpeaker, baseFreq + 150, 90);
+      delay(delayTime);
+    
+      baseFreq = baseFreq - 10;
+    }
+
+-   Even simpler&#x2026;
+
+    int pinSpeaker = 7;
+    int delayTime = 5;
+    int i = 0;
+    
+    void setup()
+    {}
+    
+    void loop()
+    {
+      tone(pinSpeaker, 100);
+      tone(pinSpeaker, 100 + i);
+    
+      i = i + 1;
+    }
+
+-   Or noisier
+
+    int i = 0;
+    int pinSpeaker = 7;
+    int delayTime = 5;
+    
+    void setup()
+    {}
+    
+    void loop()
+    {
+      tone(pinSpeaker, 100 + i);
+      delay(delayTime);
+      tone(pinSpeaker, 2000 - i);
+      delay(delayTime);
+    
+      i = i + 1;
+    }
+
+-   Or like a quasi-[Shepard tone](https://en.wikipedia.org/wiki/Shepard_tone)
+
+    int pinSpeaker = 7;
+    int delayTime = 5;
+    float i = 0; //mind the data type!
+    
+    void setup()
+    {}
+    
+    void loop()
+    {
+      tone(pinSpeaker, 100 + i);
+      delay(delayTime);
+      tone(pinSpeaker, 100 + (i/10));
+      delay(delayTime);
+    
+      i = i + 10;
+    }
+
+
+<a id="org6bfa850"></a>
+
+### 7.3 EXAMPLE 3
+
+-   Without running, what is going to happen here?
+
+    int pin = 7;
+    int freq = 100;
+    int i = 0;
+    
+    void setup()
+    {}
+    
+    void loop()
+    {
+      tone(pin, freq);
+    
+      freq = freq - 1;
+    
+      if (freq < 32)  //where does 32 come from? RTFM!
+      {
+        freq = 100;
+      }
+    
+      delay(10);
+    } 
+
+-   Question: how can I invert this glissando?
+
+
+<a id="orgfe8169a"></a>
+
+### 7.4 EXAMPLE 4
+
+-   Modulate your modulators&#x2026;
+    -   Compare this to [example 3 on item 5.3](https://github.com/magnoCaliman/workshopsHEMU/blob/master/workshopsHEMU_arduino.org#53-example-3)
+
+    int pinSpeaker = 7;
+    int randMin = 17000;
+    
+    void setup()
+    {}
+    
+    void loop()
+    {
+      tone(pinSpeaker, random(randMin, 20000));
+    
+      randMin = randMin - 1;
+    }
+
+
+<a id="org45bca9e"></a>
+
+# 8. TUDO JUNTO E MISTURADO
+
+-   This code uses all the concepts shown up until now, applied to a single example. How?
+
+    int pinSpeaker = 7;
+    int delayTime = 100;
+    int dur = 90;
+    int randMax = 55;
+    
+    void setup()
+    {}
+    
+    void loop()
+    {
+      int freqGliss = random(50, randMax);
+    
+      tone(pinSpeaker, freqGliss, dur);
+      delay(delayTime);
+    
+      randMax = randMax + 10;
+    
+      if (randMax > 1000)
+      {
+        randMax = 55;  
+      }
+    }
+
