@@ -1,3 +1,6 @@
+#+OPTIONS: toc:nil
+#+OPTIONS: num:nil
+
 ** INTRO
 *magno.caliman@orpheusinstituut.be*
 
