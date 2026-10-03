@@ -1,53 +1,4 @@
 
-# Table of Contents
-
-1.  [0. Arduino?](#orgac52fa5)
-        1.  [0.1 INSTALLATION](#org0bbc019)
-2.  [1. BLINK](#org2826d2d)
-        1.  [1.1 EXAMPLE](#org1e89e4b)
-        2.  [1.2 NOTES](#org7a6b372)
-        3.  [1.3 MODS](#org3778074)
-3.  [2. `tone()`](#orge9823d0)
-        1.  [2.1 CIRCUIT](#org2f9d434)
-        2.  [2.2 EXAMPLE](#org9b7258c)
-        3.  [2.3 NOTES](#orgc1e0a33)
-        4.  [2.4 MODS](#orgc65eb03)
-        5.  [2.5 TO THINK&#x2026;](#orgedc11af)
-4.  [3. `delay()`](#orge74c3e9)
-    1.  [3.1 EXAMPLE 1](#org1210951)
-    2.  [3.2 MODS](#org8bbf8ed)
-    3.  [3.3 EXAMPLE 2](#orge1b23aa)
-    4.  [3.4 NOTES](#orgd580dc9)
-    5.  [3.5 TO THINK&#x2026;](#orgcd03763)
-5.  [4. VARIABLES](#org52ab06e)
-    1.  [4.1 EXAMPLE 1](#org9db60d2)
-        1.  [4.1.2 NOTES](#orgc6d14b1)
-        2.  [4.1.3 MODS](#orgc9d9a99)
-    2.  [4.2 EXAMPLE 2](#org22e4e73)
-    3.  [4.3 EXAMPLE 3](#org68b4135)
-    4.  [4.4 MODS](#org9736f46)
-    5.  [4.5 TO THINK&#x2026;](#org8c2a7cc)
-6.  [5. `random()`](#org2a94fef)
-        1.  [5.1 EXAMPLE 1](#org9c6352c)
-        2.  [5.2 EXAMPLE 2](#orgbed58d4)
-        3.  [5.3 EXAMPLE 3](#orgf50b7c5)
-7.  [And now, for something completely different&#x2026;](#orgf21d7b7)
-8.  [6. `if()`](#orge31b8f9)
-    1.  [6.1 EXAMPLE 1](#org4a1c76f)
-        1.  [6.1.1 NOTES](#org9d8060f)
-    2.  [6.2 EXAMPLE 2](#org071971e)
-    3.  [6.3 EXAMPLE 3](#orgc320555)
-    4.  [6.4 EXAMPLE 4](#orgb1a1d4f)
-        1.  [6.3.1 NOTES](#orge308d09)
-9.  [7. ITERATION](#orgf2b2bbf)
-        1.  [7.1 EXAMPLE 1](#orge8b3c33)
-        2.  [7.2 EXAMPLE 2](#org69ca35d)
-        3.  [7.3 EXAMPLE 3](#orga83aecb)
-        4.  [7.4 EXAMPLE 4](#orga443ecb)
-10. [8. TUDO JUNTO E MISTURADO](#orga1c0ba7)
-
-
-<a id="orgac52fa5"></a>
 
 # 0. Arduino?
 
@@ -63,8 +14,6 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
     -   Cabinet of Curiosness: <https://youtu.be/JCiXV6b7N0A>
 
 
-<a id="org0bbc019"></a>
-
 ### 0.1 INSTALLATION
 
 -   Visit <https://www.arduino.cc/en/software>
@@ -78,8 +27,6 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
 ![img](./assets/ide.png)
 
 
-<a id="org2826d2d"></a>
-
 # 1. BLINK
 
 1.  Open a new Arduino IDE, delete everything, copy and paste the code below
@@ -87,8 +34,6 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
 3.  Save the file
 4.  Upload it
 
-
-<a id="org1e89e4b"></a>
 
 ### 1.1 EXAMPLE
 
@@ -108,34 +53,24 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
     }
 
 
-<a id="org7a6b372"></a>
-
 ### 1.2 NOTES
 
 -   Folder structure
 -   Naming conventions
 
 
-<a id="org3778074"></a>
-
 ### 1.3 MODS
 
 -   What are you able to change in this code? What are your *entry points*?
 
 
-<a id="orge9823d0"></a>
-
 # 2. `tone()`
 
-
-<a id="org2f9d434"></a>
 
 ### 2.1 CIRCUIT
 
 ![img](./assets/tone_02.png)
 
-
-<a id="org9b7258c"></a>
 
 ### 2.2 EXAMPLE
 
@@ -148,8 +83,6 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
     }
 
 
-<a id="orgc1e0a33"></a>
-
 ### 2.3 NOTES
 
 -   `void setup()` and `void loop()`
@@ -157,8 +90,6 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
 -   RTFM - <https://docs.arduino.cc/language-reference/>
 -   Syntax conventions
 
-
-<a id="orgc65eb03"></a>
 
 ### 2.4 MODS
 
@@ -175,8 +106,6 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
     }
 
 
-<a id="orgedc11af"></a>
-
 ### 2.5 TO THINK&#x2026;
 
 -   Attitude towards the experience
@@ -186,12 +115,8 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
 -   How does this attitude impacts your creative decisions?
 
 
-<a id="orge74c3e9"></a>
-
 # 3. `delay()`
 
-
-<a id="org1210951"></a>
 
 ## 3.1 EXAMPLE 1
 
@@ -210,8 +135,6 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
     -   What arguments is the `delay()` function expecting?
 
 
-<a id="org8bbf8ed"></a>
-
 ## 3.2 MODS
 
 -   From `tone()` reference, under *Parameters*
@@ -226,8 +149,6 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
       tone(5, 100, 50);
     }
 
-
-<a id="orge1b23aa"></a>
 
 ## 3.3 EXAMPLE 2
 
@@ -257,16 +178,12 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
     -   Any value!
 
 
-<a id="orgd580dc9"></a>
-
 ## 3.4 NOTES
 
 -   Comments
 -   Amount of arguments
 -   Order/execution time
 
-
-<a id="orgcd03763"></a>
 
 ## 3.5 TO THINK&#x2026;
 
@@ -276,12 +193,8 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
 -   There's a *non-transparency of the medium*. Engaging with the same material through a different mediator can reveal new things.
 
 
-<a id="org52ab06e"></a>
-
 # 4. VARIABLES
 
-
-<a id="org9db60d2"></a>
 
 ## 4.1 EXAMPLE 1
 
@@ -340,22 +253,16 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
     }
 
 
-<a id="orgc6d14b1"></a>
-
 ### 4.1.2 NOTES
 
 -   "Box with a tag" analogy
 -   Naming conventions
 
 
-<a id="orgc9d9a99"></a>
-
 ### 4.1.3 MODS
 
 -   How can you change speaker to pin 7?
 
-
-<a id="org22e4e73"></a>
 
 ## 4.2 EXAMPLE 2
 
@@ -381,8 +288,6 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
 -   *Simbolic* representation of information
     -   Does the line `tone(pinSpeaker, baseFreq + 100, 90);` changes the value of the variable `baseFreq`? What's the value of `baseFreq` at line 12? And 14?
 
-
-<a id="org68b4135"></a>
 
 ## 4.3 EXAMPLE 3
 
@@ -412,8 +317,6 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
     }
 
 
-<a id="org9736f46"></a>
-
 ## 4.4 MODS
 
 -   How can we make the duration of the sound proportional to the duration of the pause? For example, always half? Or 90%?
@@ -421,20 +324,14 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
 -   How can we recreate the example 2 from [item 3.3](https://github.com/magnoCaliman/workshopsHEMU/blob/master/workshopsHEMU_arduino.org#33-example-2) but now using variables that *describe the logic* of how our sequence of frequencies? Is there more than one way of doing it?
 
 
-<a id="org8c2a7cc"></a>
-
 ## 4.5 TO THINK&#x2026;
 
 -   Variables allows us to create *logic* around a piece of *data* in our program.
     -   Changes the way we navigate the *layers of abstraction* of our material.
 
 
-<a id="org2a94fef"></a>
-
 # 5. `random()`
 
-
-<a id="org9c6352c"></a>
 
 ### 5.1 EXAMPLE 1
 
@@ -450,14 +347,12 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
       delay(delayTime);
     }
 
-1.  5.1.1 NOTES
+-   5.1.1 NOTES
 
     -   Functions as arguments for other functions
         -   Modularity as a principle
     -   Numeric value as an abstraction
 
-
-<a id="orgbed58d4"></a>
 
 ### 5.2 EXAMPLE 2
 
@@ -521,12 +416,10 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
       delay(delayTime);
     }
 
-1.  5.2.1 NOTES
+-   5.2.1 NOTES
 
     -   You can only acess a piece of data once you store it somewhere.
 
-
-<a id="orgf50b7c5"></a>
 
 ### 5.3 EXAMPLE 3
 
@@ -555,8 +448,6 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
     }
 
 
-<a id="orgf21d7b7"></a>
-
 # And now, for something completely different&#x2026;
 
     int pinSpeaker = 7;
@@ -570,12 +461,8 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
     } 
 
 
-<a id="orge31b8f9"></a>
-
 # 6. `if()`
 
-
-<a id="org4a1c76f"></a>
 
 ## 6.1 EXAMPLE 1
 
@@ -597,14 +484,10 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
     } 
 
 
-<a id="org9d8060f"></a>
-
 ### 6.1.1 NOTES
 
 -   There are *only* two possible answers for the "condition question": yes or no.
 
-
-<a id="org071971e"></a>
 
 ## 6.2 EXAMPLE 2
 
@@ -627,8 +510,6 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
       }
     } 
 
-
-<a id="orgc320555"></a>
 
 ## 6.3 EXAMPLE 3
 
@@ -674,8 +555,6 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
     -   Remove the hardcoded values for the duration (the `longDur` and `shortDur` variables) and make the logic for their values dependent solely on the time of the pause between notes.
 
 
-<a id="orgb1a1d4f"></a>
-
 ## 6.4 EXAMPLE 4
 
     int pinSpeaker = 7;
@@ -708,8 +587,6 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
 -   Why no `int baseFreq` on line 14, but only `baseFreq`?
 
 
-<a id="orge308d09"></a>
-
 ### 6.3.1 NOTES
 
 -   `TRUE` and `FALSE` logic
@@ -719,12 +596,8 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
     -   b) "invisible hands" that can modify values and modulate the entry points in your code
 
 
-<a id="orgf2b2bbf"></a>
-
 # 7. ITERATION
 
-
-<a id="orge8b3c33"></a>
 
 ### 7.1 EXAMPLE 1
 
@@ -743,18 +616,16 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
       delay(500);
     }
 
-1.  7.1.1 NOTES
+-   7.1.1 NOTES
 
     -   `x = x + 1` is mathematically untrue, but computationally valid
     -   Iteration as a *gradual, [self-referencing process](https://www.youtube.com/watch?v=u55XIK_4buI)*
 
-2.  7.1.2 MODS
+-   7.1.2 MODS
 
     -   How can you make it rise faster, and then restart?
         -   "Divide and conquer"
 
-
-<a id="org69ca35d"></a>
 
 ### 7.2 EXAMPLE 2
 
@@ -837,8 +708,6 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
     }
 
 
-<a id="orga83aecb"></a>
-
 ### 7.3 EXAMPLE 3
 
 -   Without running, what is going to happen here?
@@ -867,8 +736,6 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
 -   Question: how can I invert this glissando?
 
 
-<a id="orga443ecb"></a>
-
 ### 7.4 EXAMPLE 4
 
 -   Modulate your modulators&#x2026;
@@ -887,8 +754,6 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
       randMin = randMin - 1;
     }
 
-
-<a id="orga1c0ba7"></a>
 
 # 8. TUDO JUNTO E MISTURADO
 
