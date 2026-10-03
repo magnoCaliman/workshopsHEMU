@@ -1,0 +1,1249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-10-03 Sat 18:09 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-orgeb96b0a" class="outline-2">
+<h2 id="orgeb96b0a"><span class="section-number-2">1.</span> 0. Arduino?</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>What is it?
+<ul class="org-ul">
+<li><a href="https://www.arduino.cc/">https://www.arduino.cc/</a></li>
+</ul></li>
+</ul>
+
+<p>
+Ecosystem (circuitry + programming language + IDE) that allows us to create logic to interface/control hardware and software
+</p>
+
+<ul class="org-ul">
+<li>What can you make?
+<ul class="org-ul">
+<li>Coin slot detector: <a href="https://www.instructables.com/id/coin-slot-detector/">https://www.instructables.com/id/coin-slot-detector/</a></li>
+<li>Geiger counter: <a href="https://www.instructables.com/Arduino-DIY-Geiger-Counter/">https://www.instructables.com/Arduino-DIY-Geiger-Counter/</a></li>
+<li>Beat slicer: <a href="https://vimeo.com/45422593">https://vimeo.com/45422593</a></li>
+<li>Cabinet of Curiosness: <a href="https://youtu.be/JCiXV6b7N0A">https://youtu.be/JCiXV6b7N0A</a></li>
+</ul></li>
+</ul>
+</div>
+<div id="outline-container-org0f880f3" class="outline-4">
+<h4 id="org0f880f3"><span class="section-number-4">1.0.1.</span> 0.1 INSTALLATION</h4>
+<div class="outline-text-4" id="text-1-0-1">
+<ul class="org-ul">
+<li>Visit <a href="https://www.arduino.cc/en/software">https://www.arduino.cc/en/software</a></li>
+<li>Scrool down to <b>Arduino IDE</b>, select the appropriate options for the operating system you're using:
+<ul class="org-ul">
+<li>macOS: download and unzip the file, where you will find the <code>Arduino.app</code> program. Detailed info can be found <a href="https://www.arduino.cc/en/Guide/macOS">here</a>.</li>
+<li>Windows: use the option "Win 10 and newer" to download the <code>.exe</code> file. <b>DO NOT</b> use the "ZIP file" option. Runnig the <code>.exe</code> should give you a proper installation prompt (those where you click "next" several times&#x2026;) as illustrated in the detailed guide <a href="https://www.arduino.cc/en/Guide/Windows">here</a>.</li>
+<li>Linux: The installation method changes depending on your distribution. For Ubuntu based distributions, follow <a href="https://www.arduino.cc/en/Guide/Linux">this guide</a>.</li>
+</ul></li>
+
+<li>If the installation was sucessfull you should now have a program called <code>Arduino</code> in your list of programs, which when opened looks something like this. That means you are all set.</li>
+</ul>
+
+
+<div id="org6e619f2" class="figure">
+<p><img src="./assets/ide.png" alt="ide.png" width="80%" />
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgcf0f816" class="outline-2">
+<h2 id="orgcf0f816"><span class="section-number-2">2.</span> 1. BLINK</h2>
+<div class="outline-text-2" id="text-2">
+<ol class="org-ol">
+<li>Open a new Arduino IDE, delete everything, copy and paste the code below</li>
+<li>Select the correct board and port in <code>Tools -&gt; Board</code> and <code>Tools -&gt; Port</code></li>
+<li>Save the file</li>
+<li>Upload it</li>
+</ol>
+</div>
+<div id="outline-container-org11f67c2" class="outline-4">
+<h4 id="org11f67c2"><span class="section-number-4">2.0.1.</span> 1.1 EXAMPLE</h4>
+<div class="outline-text-4" id="text-2-0-1">
+<div class="org-src-container">
+<pre class="src src-c"><span style="color: #605A52; font-style: italic;">int</span> <span style="color: #556995;">pinLed</span> = 13;
+
+<span style="color: #605A52; font-style: italic;">void</span> <span style="color: #605A52; font-style: italic;">setup</span>()
+{
+  pinMode(pinLed, OUTPUT);
+}
+
+<span style="color: #605A52; font-style: italic;">void</span> <span style="color: #605A52; font-style: italic;">loop</span>()
+{
+  digitalWrite(pinLed, HIGH);
+  delay(1000);
+  digitalWrite(pinLed, LOW);
+  delay(500);  
+}
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org6056553" class="outline-4">
+<h4 id="org6056553"><span class="section-number-4">2.0.2.</span> 1.2 NOTES</h4>
+<div class="outline-text-4" id="text-2-0-2">
+<ul class="org-ul">
+<li>Folder structure</li>
+<li>Naming conventions</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org5359a54" class="outline-4">
+<h4 id="org5359a54"><span class="section-number-4">2.0.3.</span> 1.3 MODS</h4>
+<div class="outline-text-4" id="text-2-0-3">
+<ul class="org-ul">
+<li>What are you able to change in this code? What are your <i>entry points</i>?</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org1f59537" class="outline-2">
+<h2 id="org1f59537"><span class="section-number-2">3.</span> 2. <code>tone()</code></h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-orgf7980f5" class="outline-4">
+<h4 id="orgf7980f5"><span class="section-number-4">3.0.1.</span> 2.1 CIRCUIT</h4>
+<div class="outline-text-4" id="text-3-0-1">
+
+<div id="org0db1ab1" class="figure">
+<p><img src="./assets/tone_02.png" alt="tone_02.png" width="80%" />
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org21e5181" class="outline-4">
+<h4 id="org21e5181"><span class="section-number-4">3.0.2.</span> 2.2 EXAMPLE</h4>
+<div class="outline-text-4" id="text-3-0-2">
+<div class="org-src-container">
+<pre class="src src-c"><span style="color: #605A52; font-style: italic;">void</span> <span style="color: #605A52; font-style: italic;">setup</span>()
+{}
+
+<span style="color: #605A52; font-style: italic;">void</span> <span style="color: #605A52; font-style: italic;">loop</span>()
+{
+  tone(5, 100);
+}
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org928ebcf" class="outline-4">
+<h4 id="org928ebcf"><span class="section-number-4">3.0.3.</span> 2.3 NOTES</h4>
+<div class="outline-text-4" id="text-3-0-3">
+<ul class="org-ul">
+<li><code>void setup()</code> and <code>void loop()</code></li>
+<li>Functions &amp; arguments</li>
+<li>RTFM - <a href="https://docs.arduino.cc/language-reference/">https://docs.arduino.cc/language-reference/</a></li>
+<li>Syntax conventions</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgdfec343" class="outline-4">
+<h4 id="orgdfec343"><span class="section-number-4">3.0.4.</span> 2.4 MODS</h4>
+<div class="outline-text-4" id="text-3-0-4">
+<ul class="org-ul">
+<li>From <code>tone()</code> reference: "Only one tone can be generated at a time"
+<ul class="org-ul">
+<li>Can you do this then?</li>
+</ul></li>
+</ul>
+<div class="org-src-container">
+<pre class="src src-c"><span style="color: #605A52; font-style: italic;">void</span> <span style="color: #605A52; font-style: italic;">setup</span>()
+{}
+
+<span style="color: #605A52; font-style: italic;">void</span> <span style="color: #605A52; font-style: italic;">loop</span>()
+{
+  tone(5, 40); 
+  tone(5, 41);
+}
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org7bed837" class="outline-4">
+<h4 id="org7bed837"><span class="section-number-4">3.0.5.</span> 2.5 TO THINK&#x2026;</h4>
+<div class="outline-text-4" id="text-3-0-5">
+<ul class="org-ul">
+<li>Attitude towards the experience
+<ul class="org-ul">
+<li>Manipulation of <i>processes</i> not <i>materials</i></li>
+<li>"[action] the outcome of which is unknown"</li>
+<li><a href="https://conditionaldesign.org/manifesto/">Conditional Design Manifesto</a></li>
+</ul></li>
+<li>How does this attitude impacts your creative decisions?</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgc4bfbe7" class="outline-2">
+<h2 id="orgc4bfbe7"><span class="section-number-2">4.</span> 3. <code>delay()</code></h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org15e7158" class="outline-3">
+<h3 id="org15e7158"><span class="section-number-3">4.1.</span> 3.1 EXAMPLE 1</h3>
+<div class="outline-text-3" id="text-4-1">
+<div class="org-src-container">
+<pre class="src src-c"><span style="color: #605A52; font-style: italic;">void</span> <span style="color: #605A52; font-style: italic;">setup</span>()
+{}
+
+<span style="color: #605A52; font-style: italic;">void</span> <span style="color: #605A52; font-style: italic;">loop</span>()
+{
+  tone(5, 100);
+  delay(200);
+  tone(5, 200);
+  delay(200);
+}
+</pre>
+</div>
+
+<ul class="org-ul">
+<li>Remember the 0<sup>th</sup> rule of programming: <b>RTFM!</b>
+<ul class="org-ul">
+<li>What arguments is the <code>delay()</code> function expecting?</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org3a5765f" class="outline-3">
+<h3 id="org3a5765f"><span class="section-number-3">4.2.</span> 3.2 MODS</h3>
+<div class="outline-text-3" id="text-4-2">
+<ul class="org-ul">
+<li>From <code>tone()</code> reference, under <i>Parameters</i>
+<ul class="org-ul">
+<li>"<code>duration</code>: the duration of the tone in milliseconds (optional)"</li>
+</ul></li>
+<li>Then why doesn't this work?</li>
+</ul>
+<div class="org-src-container">
+<pre class="src src-c"><span style="color: #605A52; font-style: italic;">void</span> <span style="color: #605A52; font-style: italic;">setup</span>()
+{}
+
+<span style="color: #605A52; font-style: italic;">void</span> <span style="color: #605A52; font-style: italic;">loop</span>()
+{
+  tone(5, 100, 50);
+}
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orga970595" class="outline-3">
+<h3 id="orga970595"><span class="section-number-3">4.3.</span> 3.3 EXAMPLE 2</h3>
+<div class="outline-text-3" id="text-4-3">
+<ul class="org-ul">
+<li>With that, we have a proto-<a href="https://www.youtube.com/watch?v=aXTT8jUhoAg">sequencer</a></li>
+</ul>
+<div class="org-src-container">
+<pre class="src src-c"><span style="color: #605A52; font-style: italic;">void</span> <span style="color: #605A52; font-style: italic;">setup</span>()
+{}
+
+<span style="color: #605A52; font-style: italic;">void</span> <span style="color: #605A52; font-style: italic;">loop</span>()
+{
+  tone(5, 100, 30); <span style="color: #9E9A95; font-style: italic;">// </span><span style="color: #9E9A95; font-style: italic;">now with three arguments
+</span>  delay(100);       <span style="color: #9E9A95; font-style: italic;">// </span><span style="color: #9E9A95; font-style: italic;">and comments!
+</span>  tone(5, 200, 30);
+  delay(100);
+  tone(5, 300, 30);
+  delay(100);
+  tone(5, 400, 30);
+  delay(100);
+}
+</pre>
+</div>
+
+<ul class="org-ul">
+<li>What frequency values to choose?
+<ul class="org-ul">
+<li>Rational ratios (double, half, 1/3, etc)</li>
+<li>Arithmetic and geometric sequences</li>
+<li>Musical pitches: <a href="http://pages.mtu.edu/~suits/notefreqs.html">http://pages.mtu.edu/~suits/notefreqs.html</a></li>
+<li>Numbers really close together</li>
+<li>Numbers really far apart</li>
+<li>Any value!</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org203ccb3" class="outline-3">
+<h3 id="org203ccb3"><span class="section-number-3">4.4.</span> 3.4 NOTES</h3>
+<div class="outline-text-3" id="text-4-4">
+<ul class="org-ul">
+<li>Comments</li>
+<li>Amount of arguments</li>
+<li>Order/execution time</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org32eaf98" class="outline-3">
+<h3 id="org32eaf98"><span class="section-number-3">4.5.</span> 3.5 TO THINK&#x2026;</h3>
+<div class="outline-text-3" id="text-4-5">
+<ul class="org-ul">
+<li>Parameters are the same a traditional score: pitch, onset of attack, and duration. But with (at least) two differences:
+<ul class="org-ul">
+<li>Different representation system for parameters: Hz vs. pitch &amp;&amp; milliseconds vs. rhythm.</li>
+<li>Different affordances from the system: you can't ask a pianist to play two notes 10 milliseconds apart.</li>
+</ul></li>
+<li>There's a <i>non-transparency of the medium</i>. Engaging with the same material through a different mediator can reveal new things.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org753d0b3" class="outline-2">
+<h2 id="org753d0b3"><span class="section-number-2">5.</span> 4. VARIABLES</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-org8e803d3" class="outline-3">
+<h3 id="org8e803d3"><span class="section-number-3">5.1.</span> 4.1 EXAMPLE 1</h3>
+<div class="outline-text-3" id="text-5-1">
+<ul class="org-ul">
+<li>Stranger tempo&#x2026;
+<ul class="org-ul">
+<li><a href="https://www.youtube.com/watch?v=-RcPZdihrp4">https://www.youtube.com/watch?v=-RcPZdihrp4</a></li>
+</ul></li>
+<li>Seems slow. How can we fix it?</li>
+</ul>
+
+<div class="org-src-container">
+<pre class="src src-c"><span style="color: #605A52; font-style: italic;">void</span> <span style="color: #605A52; font-style: italic;">setup</span>()
+{}
+
+<span style="color: #605A52; font-style: italic;">void</span> <span style="color: #605A52; font-style: italic;">loop</span>()
+{
+  tone(5, 65);
+  delay(250);
+  tone(5, 82);
+  delay(250);
+  tone(5, 98);
+  delay(250);
+  tone(5, 123);
+  delay(250);
+  tone(5, 130);
+  delay(250);
+  tone(5, 123);
+  delay(250);
+  tone(5, 98);
+  delay(250);
+  tone(5, 82);
+  delay(250);
+}
+</pre>
+</div>
+
+<ul class="org-ul">
+<li>There's your problem&#x2026;</li>
+</ul>
+
+<div class="org-src-container">
+<pre class="src src-c"><span style="color: #605A52; font-style: italic;">int</span> <span style="color: #556995;">delayTime</span> = 180;
+
+<span style="color: #605A52; font-style: italic;">void</span> <span style="color: #605A52; font-style: italic;">setup</span>()
+{}
+
+<span style="color: #605A52; font-style: italic;">void</span> <span style="color: #605A52; font-style: italic;">loop</span>()
+{
+  tone(5, 65);
+  delay(delayTime);
+  tone(5, 82);
+  delay(delayTime);
+  tone(5, 98);
+  delay(delayTime);
+  tone(5, 123);
+  delay(delayTime);
+  tone(5, 130);
+  delay(delayTime);
+  tone(5, 123);
+  delay(delayTime);
+  tone(5, 98);
+  delay(delayTime);
+  tone(5, 82);
+  delay(delayTime);
+}
+</pre>
+</div>
+</div>
+<div id="outline-container-org79cd6d5" class="outline-4">
+<h4 id="org79cd6d5"><span class="section-number-4">5.1.1.</span> 4.1.2 NOTES</h4>
+<div class="outline-text-4" id="text-5-1-1">
+<ul class="org-ul">
+<li>"Box with a tag" analogy</li>
+<li>Naming conventions</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org3e54f81" class="outline-4">
+<h4 id="org3e54f81"><span class="section-number-4">5.1.2.</span> 4.1.3 MODS</h4>
+<div class="outline-text-4" id="text-5-1-2">
+<ul class="org-ul">
+<li>How can you change speaker to pin 7?</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org0aadd99" class="outline-3">
+<h3 id="org0aadd99"><span class="section-number-3">5.2.</span> 4.2 EXAMPLE 2</h3>
+<div class="outline-text-3" id="text-5-2">
+<div class="org-src-container">
+<pre class="src src-c"><span style="color: #605A52; font-style: italic;">int</span> <span style="color: #556995;">pinSpeaker</span> = 7;
+<span style="color: #605A52; font-style: italic;">int</span> <span style="color: #556995;">baseFreq</span> = 300;
+<span style="color: #605A52; font-style: italic;">int</span> <span style="color: #556995;">delayTime</span> = 100;
+
+<span style="color: #605A52; font-style: italic;">void</span> <span style="color: #605A52; font-style: italic;">setup</span>()
+{}
+
+<span style="color: #605A52; font-style: italic;">void</span> <span style="color: #605A52; font-style: italic;">loop</span>()
+{
+  tone(pinSpeaker, baseFreq, 90);
+  delay(delayTime);
+  tone(pinSpeaker, baseFreq + 100, 90);
+  delay(delayTime);
+  tone(pinSpeaker, baseFreq + 200, 90);
+  delay(delayTime);
+  tone(pinSpeaker, baseFreq + 150, 90);
+  delay(delayTime);
+}
+</pre>
+</div>
+
+<ul class="org-ul">
+<li><i>Simbolic</i> representation of information
+<ul class="org-ul">
+<li>Does the line <code>tone(pinSpeaker, baseFreq + 100, 90);</code> changes the value of the variable <code>baseFreq</code>? What's the value of <code>baseFreq</code> at line 12? And 14?</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgebf934c" class="outline-3">
+<h3 id="orgebf934c"><span class="section-number-3">5.3.</span> 4.3 EXAMPLE 3</h3>
+<div class="outline-text-3" id="text-5-3">
+<ul class="org-ul">
+<li>For the math/tunning afficionados</li>
+</ul>
+<div class="org-src-container">
+<pre class="src src-c"><span style="color: #605A52; font-style: italic;">int</span> <span style="color: #556995;">pinSpeaker</span> = 7;
+<span style="color: #605A52; font-style: italic;">float</span> <span style="color: #556995;">baseFreq</span> = 100;
+<span style="color: #605A52; font-style: italic;">int</span> <span style="color: #556995;">delayTime</span> = 150;
+
+<span style="color: #605A52; font-style: italic;">void</span> <span style="color: #605A52; font-style: italic;">setup</span>()
+{}
+
+<span style="color: #605A52; font-style: italic;">void</span> <span style="color: #605A52; font-style: italic;">loop</span>()
+{
+  tone(pinSpeaker, baseFreq);
+  delay(delayTime);
+  tone(pinSpeaker, baseFreq * 2);
+  delay(delayTime);
+  tone(pinSpeaker, baseFreq * 3/2);
+  delay(delayTime);
+  tone(pinSpeaker, baseFreq * 5/4);
+  delay(delayTime);
+  tone(pinSpeaker, baseFreq * 9/8);
+  delay(delayTime);
+  tone(pinSpeaker, baseFreq);
+  delay(delayTime);
+}
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org3cb04fb" class="outline-3">
+<h3 id="org3cb04fb"><span class="section-number-3">5.4.</span> 4.4 MODS</h3>
+<div class="outline-text-3" id="text-5-4">
+<ul class="org-ul">
+<li>How can we make the duration of the sound proportional to the duration of the pause? For example, always half? Or 90%?</li>
+
+<li>How can we recreate the example 2 from <a href="https://github.com/magnoCaliman/workshopsHEMU/blob/master/workshopsHEMU_arduino.org#33-example-2">item 3.3</a> but now using variables that <i>describe the logic</i> of how our sequence of frequencies? Is there more than one way of doing it?</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org1b7f72e" class="outline-3">
+<h3 id="org1b7f72e"><span class="section-number-3">5.5.</span> 4.5 TO THINK&#x2026;</h3>
+<div class="outline-text-3" id="text-5-5">
+<ul class="org-ul">
+<li>Variables allows us to create <i>logic</i> around a piece of <i>data</i> in our program.
+<ul class="org-ul">
+<li>Changes the way we navigate the <i>layers of abstraction</i> of our material.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org37a8992" class="outline-2">
+<h2 id="org37a8992"><span class="section-number-2">6.</span> 5. <code>random()</code></h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-orge010c76" class="outline-4">
+<h4 id="orge010c76"><span class="section-number-4">6.0.1.</span> 5.1 EXAMPLE 1</h4>
+<div class="outline-text-4" id="text-6-0-1">
+<div class="org-src-container">
+<pre class="src src-c"><span style="color: #605A52; font-style: italic;">int</span> <span style="color: #556995;">pinSpeaker</span> = 7;
+<span style="color: #605A52; font-style: italic;">int</span> <span style="color: #556995;">delayTime</span> = 100;
+
+<span style="color: #605A52; font-style: italic;">void</span> <span style="color: #605A52; font-style: italic;">setup</span>()
+{}
+
+<span style="color: #605A52; font-style: italic;">void</span> <span style="color: #605A52; font-style: italic;">loop</span>()
+{
+  tone(pinSpeaker, random(100, 500), 90);
+  delay(delayTime);
+}
+</pre>
+</div>
+</div>
+<ol class="org-ol">
+<li><a id="orgdcea981"></a>5.1.1 NOTES<br />
+<div class="outline-text-5" id="text-6-0-1-1">
+<ul class="org-ul">
+<li>Functions as arguments for other functions
+<ul class="org-ul">
+<li>Modularity as a principle</li>
+</ul></li>
+<li>Numeric value as an abstraction</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgd238ea3" class="outline-4">
+<h4 id="orgd238ea3"><span class="section-number-4">6.0.2.</span> 5.2 EXAMPLE 2</h4>
+<div class="outline-text-4" id="text-6-0-2">
+<ul class="org-ul">
+<li>Without running, can you imagine the difference in behaviour between these two examples?</li>
+
+<li></li>
+</ul>
+<div class="org-src-container">
+<pre class="src src-c"><span style="color: #605A52; font-style: italic;">int</span> <span style="color: #556995;">pinSpeaker</span> = 7;
+<span style="color: #605A52; font-style: italic;">int</span> <span style="color: #556995;">delayTime</span> = 180;
+
+<span style="color: #605A52; font-style: italic;">void</span> <span style="color: #605A52; font-style: italic;">setup</span>()
+{}
+
+<span style="color: #605A52; font-style: italic;">void</span> <span style="color: #605A52; font-style: italic;">loop</span>()
+{
+  tone(pinSpeaker, 65, random(20, 180));
+  delay(delayTime);
+  tone(pinSpeaker, 82, random(20, 180));
+  delay(delayTime);
+  tone(pinSpeaker, 98, random(20, 180));
+  delay(delayTime);
+  tone(pinSpeaker, 123, random(20, 180));
+  delay(delayTime);
+  tone(pinSpeaker, 130, random(20, 180));
+  delay(delayTime);
+  tone(pinSpeaker, 123, random(20, 180));
+  delay(delayTime);
+  tone(pinSpeaker, 98, random(20, 180));
+  delay(delayTime);
+  tone(pinSpeaker, 82, random(20, 180));
+  delay(delayTime);
+}
+</pre>
+</div>
+
+<ol class="org-ol">
+<li></li>
+</ol>
+<div class="org-src-container">
+<pre class="src src-c"><span style="color: #605A52; font-style: italic;">int</span> <span style="color: #556995;">pinSpeaker</span> = 7;
+<span style="color: #605A52; font-style: italic;">int</span> <span style="color: #556995;">delayTime</span> = 180;
+
+<span style="color: #605A52; font-style: italic;">void</span> <span style="color: #605A52; font-style: italic;">setup</span>()
+{}
+
+<span style="color: #605A52; font-style: italic;">void</span> <span style="color: #605A52; font-style: italic;">loop</span>()
+{
+  <span style="color: #605A52; font-style: italic;">long</span> <span style="color: #556995;">dur</span> = random(20, 180);  <span style="color: #9E9A95; font-style: italic;">//</span><span style="color: #9E9A95; font-style: italic;">notice the data type of the variable
+</span>
+  tone(pinSpeaker, 65, dur);
+  delay(delayTime);
+  tone(pinSpeaker, 82, dur);
+  delay(delayTime);
+  tone(pinSpeaker, 98, dur);
+  delay(delayTime);
+  tone(pinSpeaker, 123, dur);
+  delay(delayTime);
+  tone(pinSpeaker, 130, dur);
+  delay(delayTime);
+  tone(pinSpeaker, 123, dur);
+  delay(delayTime);
+  tone(pinSpeaker, 98, dur);
+  delay(delayTime);
+  tone(pinSpeaker, 82, dur);
+  delay(delayTime);
+}
+</pre>
+</div>
+</div>
+<ol class="org-ol">
+<li><a id="orgc8d2697"></a>5.2.1 NOTES<br />
+<div class="outline-text-5" id="text-6-0-2-1">
+<ul class="org-ul">
+<li>You can only acess a piece of data once you store it somewhere.</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org64656be" class="outline-4">
+<h4 id="org64656be"><span class="section-number-4">6.0.3.</span> 5.3 EXAMPLE 3</h4>
+<div class="outline-text-4" id="text-6-0-3">
+<ul class="org-ul">
+<li>Noise!</li>
+</ul>
+
+<div class="org-src-container">
+<pre class="src src-c"><span style="color: #605A52; font-style: italic;">int</span> <span style="color: #556995;">pinSpeaker</span> = 7;
+
+<span style="color: #605A52; font-style: italic;">void</span> <span style="color: #605A52; font-style: italic;">setup</span>()
+{}
+
+<span style="color: #605A52; font-style: italic;">void</span> <span style="color: #605A52; font-style: italic;">loop</span>()
+{
+  tone(pinSpeaker, random(40, 20000));
+}
+</pre>
+</div>
+
+<ul class="org-ul">
+<li>Filtered noise!</li>
+</ul>
+<div class="org-src-container">
+<pre class="src src-c"><span style="color: #605A52; font-style: italic;">int</span> <span style="color: #556995;">pinSpeaker</span> = 7;
+
+<span style="color: #605A52; font-style: italic;">void</span> <span style="color: #605A52; font-style: italic;">setup</span>()
+{}
+
+<span style="color: #605A52; font-style: italic;">void</span> <span style="color: #605A52; font-style: italic;">loop</span>()
+{
+  tone(pinSpeaker, random(100, 400));
+}
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org9ab844c" class="outline-2">
+<h2 id="org9ab844c"><span class="section-number-2">7.</span> And now, for something completely different&#x2026;</h2>
+<div class="outline-text-2" id="text-7">
+<div class="org-src-container">
+<pre class="src src-c"><span style="color: #605A52; font-style: italic;">int</span> <span style="color: #556995;">pinSpeaker</span> = 7;
+
+<span style="color: #605A52; font-style: italic;">void</span> <span style="color: #605A52; font-style: italic;">setup</span>()
+{}
+
+<span style="color: #605A52; font-style: italic;">void</span> <span style="color: #605A52; font-style: italic;">loop</span>()
+{
+  tone(pinSpeaker, analogRead(A0));  
+} 
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org2e8affd" class="outline-2">
+<h2 id="org2e8affd"><span class="section-number-2">8.</span> 6. <code>if()</code></h2>
+<div class="outline-text-2" id="text-8">
+</div>
+<div id="outline-container-org8a52aac" class="outline-3">
+<h3 id="org8a52aac"><span class="section-number-3">8.1.</span> 6.1 EXAMPLE 1</h3>
+<div class="outline-text-3" id="text-8-1">
+<div class="org-src-container">
+<pre class="src src-c"><span style="color: #605A52; font-style: italic;">int</span> <span style="color: #556995;">pinSpeaker</span> = 7;
+<span style="color: #605A52; font-style: italic;">int</span> <span style="color: #556995;">delayTime</span> = 100;        
+
+<span style="color: #605A52; font-style: italic;">void</span> <span style="color: #605A52; font-style: italic;">setup</span>()
+{}
+
+<span style="color: #605A52; font-style: italic;">void</span> <span style="color: #605A52; font-style: italic;">loop</span>()
+{
+  <span style="color: #605A52; font-style: italic;">int</span> <span style="color: #556995;">thisNumber</span> = 5;
+
+  <span style="color: #83577D;">if</span> (thisNumber &lt; 7) 
+  {
+    tone(pinSpeaker, 100, 50);
+    delay(250);
+  }
+} 
+</pre>
+</div>
+</div>
+<div id="outline-container-org1ed5d4d" class="outline-4">
+<h4 id="org1ed5d4d"><span class="section-number-4">8.1.1.</span> 6.1.1 NOTES</h4>
+<div class="outline-text-4" id="text-8-1-1">
+<ul class="org-ul">
+<li>There are <i>only</i> two possible answers for the "condition question": yes or no.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgf2e3bb4" class="outline-3">
+<h3 id="orgf2e3bb4"><span class="section-number-3">8.2.</span> 6.2 EXAMPLE 2</h3>
+<div class="outline-text-3" id="text-8-2">
+<ul class="org-ul">
+<li>Why doesn't this seem to work?</li>
+</ul>
+<div class="org-src-container">
+<pre class="src src-c"><span style="color: #605A52; font-style: italic;">int</span> <span style="color: #556995;">pinSpeaker</span> = 7;
+<span style="color: #605A52; font-style: italic;">int</span> <span style="color: #556995;">delayTime</span> = 100;        
+
+<span style="color: #605A52; font-style: italic;">void</span> <span style="color: #605A52; font-style: italic;">setup</span>()
+{}
+
+<span style="color: #605A52; font-style: italic;">void</span> <span style="color: #605A52; font-style: italic;">loop</span>()
+{
+  <span style="color: #605A52; font-style: italic;">int</span> <span style="color: #556995;">thisNumber</span> = random(10);
+
+  <span style="color: #83577D;">if</span> (thisNumber &lt; 5) 
+  {
+    tone(pinSpeaker, 100, 50);
+    delay(250);
+  }
+} 
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org0e30b2b" class="outline-3">
+<h3 id="org0e30b2b"><span class="section-number-3">8.3.</span> 6.3 EXAMPLE 3</h3>
+<div class="outline-text-3" id="text-8-3">
+<div class="org-src-container">
+<pre class="src src-c"><span style="color: #605A52; font-style: italic;">int</span> <span style="color: #556995;">pinSpeaker</span> = 7;
+<span style="color: #605A52; font-style: italic;">int</span> <span style="color: #556995;">delayTime</span> = 200;  
+<span style="color: #605A52; font-style: italic;">int</span> <span style="color: #556995;">longDur</span> = 100;      
+<span style="color: #605A52; font-style: italic;">int</span> <span style="color: #556995;">shortDur</span> = 20;
+
+<span style="color: #605A52; font-style: italic;">void</span> <span style="color: #605A52; font-style: italic;">setup</span>()
+{}
+
+<span style="color: #605A52; font-style: italic;">void</span> <span style="color: #605A52; font-style: italic;">loop</span>()
+{
+  <span style="color: #605A52; font-style: italic;">int</span> <span style="color: #556995;">dice</span> = random(0, 10);
+
+  <span style="color: #83577D;">if</span> (dice &lt; 5)
+  {
+    tone(pinSpeaker, 100, longDur);
+    delay(delayTime);
+    tone(pinSpeaker, 150, longDur);
+    delay(delayTime);
+    tone(pinSpeaker, 180, longDur);
+    delay(delayTime);
+    tone(pinSpeaker, 150, longDur);
+    delay(delayTime);
+  }
+
+  <span style="color: #83577D;">if</span> (dice &gt;= 5)
+  {
+    tone(pinSpeaker, 100, shortDur);
+    delay(delayTime);
+    tone(pinSpeaker, 150, shortDur);
+    delay(delayTime);
+    tone(pinSpeaker, 180, shortDur);
+    delay(delayTime);
+    tone(pinSpeaker, 150, shortDur);
+    delay(delayTime);
+  }
+}
+</pre>
+</div>
+
+<ul class="org-ul">
+<li>Challenges:
+<ul class="org-ul">
+<li>Using the <code>noTone()</code> function, modify the previous example so that it instead of alternating between two sequences with different frequencies and durations, it alternates between one sequence and silence.</li>
+<li>Remove the hardcoded values for the duration (the <code>longDur</code> and <code>shortDur</code> variables) and make the logic for their values dependent solely on the time of the pause between notes.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf92aee1" class="outline-3">
+<h3 id="orgf92aee1"><span class="section-number-3">8.4.</span> 6.4 EXAMPLE 4</h3>
+<div class="outline-text-3" id="text-8-4">
+<div class="org-src-container">
+<pre class="src src-c"><span style="color: #605A52; font-style: italic;">int</span> <span style="color: #556995;">pinSpeaker</span> = 7;
+<span style="color: #605A52; font-style: italic;">int</span> <span style="color: #556995;">delayTime</span> = 100;
+
+<span style="color: #605A52; font-style: italic;">void</span> <span style="color: #605A52; font-style: italic;">setup</span>()
+{}
+
+<span style="color: #605A52; font-style: italic;">void</span> <span style="color: #605A52; font-style: italic;">loop</span>()
+{
+  <span style="color: #605A52; font-style: italic;">int</span> <span style="color: #556995;">baseFreq</span> = 100;
+  <span style="color: #605A52; font-style: italic;">int</span> <span style="color: #556995;">dice</span> = random(0, 10);
+
+  <span style="color: #83577D;">if</span> (dice &lt; 2)
+  {
+    baseFreq = random(80, 300);  
+  }
+
+  tone(pinSpeaker, baseFreq, 90);
+  delay(delayTime);
+  tone(pinSpeaker, baseFreq + 100, 90);
+  delay(delayTime);
+  tone(pinSpeaker, baseFreq + 200, 90);
+  delay(delayTime);
+  tone(pinSpeaker, baseFreq + 150, 90);
+  delay(delayTime);
+} 
+</pre>
+</div>
+
+<ul class="org-ul">
+<li>How can you change the probability of events?</li>
+<li>Why no <code>int baseFreq</code> on line 14, but only <code>baseFreq</code>?</li>
+</ul>
+</div>
+<div id="outline-container-org8206dd8" class="outline-4">
+<h4 id="org8206dd8"><span class="section-number-4">8.4.1.</span> 6.3.1 NOTES</h4>
+<div class="outline-text-4" id="text-8-4-1">
+<ul class="org-ul">
+<li><code>TRUE</code> and <code>FALSE</code> logic</li>
+<li>Syntax errors vs. logic errors</li>
+<li><code>if</code> statements as
+<ul class="org-ul">
+<li>a) <i>control structures</i> that can dictate whether or not events will happen (making "informed decisions").</li>
+<li>b) "invisible hands" that can modify values and modulate the entry points in your code</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org61dcb95" class="outline-2">
+<h2 id="org61dcb95"><span class="section-number-2">9.</span> 7. ITERATION</h2>
+<div class="outline-text-2" id="text-9">
+</div>
+<div id="outline-container-org962dba3" class="outline-4">
+<h4 id="org962dba3"><span class="section-number-4">9.0.1.</span> 7.1 EXAMPLE 1</h4>
+<div class="outline-text-4" id="text-9-0-1">
+<div class="org-src-container">
+<pre class="src src-c"><span style="color: #605A52; font-style: italic;">int</span> <span style="color: #556995;">pinSpeaker</span> = 7;
+<span style="color: #605A52; font-style: italic;">int</span> <span style="color: #556995;">freq</span> = 40;
+
+<span style="color: #605A52; font-style: italic;">void</span> <span style="color: #605A52; font-style: italic;">setup</span>()
+{}
+
+<span style="color: #605A52; font-style: italic;">void</span> <span style="color: #605A52; font-style: italic;">loop</span>()
+{
+  tone(pinSpeaker, freq);
+
+  freq = freq + 1;
+
+  delay(500);
+}
+</pre>
+</div>
+</div>
+<ol class="org-ol">
+<li><a id="org17e7ff4"></a>7.1.1 NOTES<br />
+<div class="outline-text-5" id="text-9-0-1-1">
+<ul class="org-ul">
+<li><code>x = x + 1</code> is mathematically untrue, but computationally valid</li>
+<li>Iteration as a <i>gradual, <a href="https://www.youtube.com/watch?v=u55XIK_4buI">self-referencing process</a></i></li>
+</ul>
+</div>
+</li>
+<li><a id="orgba3166b"></a>7.1.2 MODS<br />
+<div class="outline-text-5" id="text-9-0-1-2">
+<ul class="org-ul">
+<li>How can you make it rise faster, and then restart?
+<ul class="org-ul">
+<li>"Divide and conquer"</li>
+</ul></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org09a9dea" class="outline-4">
+<h4 id="org09a9dea"><span class="section-number-4">9.0.2.</span> 7.2 EXAMPLE 2</h4>
+<div class="outline-text-4" id="text-9-0-2">
+<ul class="org-ul">
+<li>Don't forget your origins&#x2026; The process of exploration is cumulative, where new techniques or concepts (such as iteration) can "unlock" new affordances from previous examples.</li>
+</ul>
+<div class="org-src-container">
+<pre class="src src-c"><span style="color: #605A52; font-style: italic;">int</span> <span style="color: #556995;">pinSpeaker</span> = 7;
+<span style="color: #605A52; font-style: italic;">int</span> <span style="color: #556995;">baseFreq</span> = 800;
+<span style="color: #605A52; font-style: italic;">int</span> <span style="color: #556995;">delayTime</span> = 100;
+
+<span style="color: #605A52; font-style: italic;">void</span> <span style="color: #605A52; font-style: italic;">setup</span>()
+{}
+
+<span style="color: #605A52; font-style: italic;">void</span> <span style="color: #605A52; font-style: italic;">loop</span>()
+{
+  tone(pinSpeaker, baseFreq, 90);
+  delay(delayTime);
+  tone(pinSpeaker, baseFreq + 100, 90);
+  delay(delayTime);
+  tone(pinSpeaker, baseFreq + 200, 90);
+  delay(delayTime);
+  tone(pinSpeaker, baseFreq + 150, 90);
+  delay(delayTime);
+
+  baseFreq = baseFreq - 10;
+}
+</pre>
+</div>
+
+<ul class="org-ul">
+<li>Even simpler&#x2026;</li>
+</ul>
+<div class="org-src-container">
+<pre class="src src-c"><span style="color: #605A52; font-style: italic;">int</span> <span style="color: #556995;">pinSpeaker</span> = 7;
+<span style="color: #605A52; font-style: italic;">int</span> <span style="color: #556995;">delayTime</span> = 5;
+<span style="color: #605A52; font-style: italic;">int</span> <span style="color: #556995;">i</span> = 0;
+
+<span style="color: #605A52; font-style: italic;">void</span> <span style="color: #605A52; font-style: italic;">setup</span>()
+{}
+
+<span style="color: #605A52; font-style: italic;">void</span> <span style="color: #605A52; font-style: italic;">loop</span>()
+{
+  tone(pinSpeaker, 100);
+  tone(pinSpeaker, 100 + i);
+
+  i = i + 1;
+}
+</pre>
+</div>
+
+<ul class="org-ul">
+<li>Or noisier</li>
+</ul>
+<div class="org-src-container">
+<pre class="src src-c"><span style="color: #605A52; font-style: italic;">int</span> <span style="color: #556995;">i</span> = 0;
+<span style="color: #605A52; font-style: italic;">int</span> <span style="color: #556995;">pinSpeaker</span> = 7;
+<span style="color: #605A52; font-style: italic;">int</span> <span style="color: #556995;">delayTime</span> = 5;
+
+<span style="color: #605A52; font-style: italic;">void</span> <span style="color: #605A52; font-style: italic;">setup</span>()
+{}
+
+<span style="color: #605A52; font-style: italic;">void</span> <span style="color: #605A52; font-style: italic;">loop</span>()
+{
+  tone(pinSpeaker, 100 + i);
+  delay(delayTime);
+  tone(pinSpeaker, 2000 - i);
+  delay(delayTime);
+
+  i = i + 1;
+}
+</pre>
+</div>
+
+<ul class="org-ul">
+<li>Or like a quasi-<a href="https://en.wikipedia.org/wiki/Shepard_tone">Shepard tone</a></li>
+</ul>
+<div class="org-src-container">
+<pre class="src src-c"><span style="color: #605A52; font-style: italic;">int</span> <span style="color: #556995;">pinSpeaker</span> = 7;
+<span style="color: #605A52; font-style: italic;">int</span> <span style="color: #556995;">delayTime</span> = 5;
+<span style="color: #605A52; font-style: italic;">float</span> <span style="color: #556995;">i</span> = 0; <span style="color: #9E9A95; font-style: italic;">//</span><span style="color: #9E9A95; font-style: italic;">mind the data type!
+</span>
+<span style="color: #605A52; font-style: italic;">void</span> <span style="color: #605A52; font-style: italic;">setup</span>()
+{}
+
+<span style="color: #605A52; font-style: italic;">void</span> <span style="color: #605A52; font-style: italic;">loop</span>()
+{
+  tone(pinSpeaker, 100 + i);
+  delay(delayTime);
+  tone(pinSpeaker, 100 + (i/10));
+  delay(delayTime);
+
+  i = i + 10;
+}
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org55e7264" class="outline-4">
+<h4 id="org55e7264"><span class="section-number-4">9.0.3.</span> 7.3 EXAMPLE 3</h4>
+<div class="outline-text-4" id="text-9-0-3">
+<ul class="org-ul">
+<li>Without running, what is going to happen here?</li>
+</ul>
+<div class="org-src-container">
+<pre class="src src-c"><span style="color: #605A52; font-style: italic;">int</span> <span style="color: #556995;">pin</span> = 7;
+<span style="color: #605A52; font-style: italic;">int</span> <span style="color: #556995;">freq</span> = 100;
+<span style="color: #605A52; font-style: italic;">int</span> <span style="color: #556995;">i</span> = 0;
+
+<span style="color: #605A52; font-style: italic;">void</span> <span style="color: #605A52; font-style: italic;">setup</span>()
+{}
+
+<span style="color: #605A52; font-style: italic;">void</span> <span style="color: #605A52; font-style: italic;">loop</span>()
+{
+  tone(pin, freq);
+
+  freq = freq - 1;
+
+  <span style="color: #83577D;">if</span> (freq &lt; 32)  <span style="color: #9E9A95; font-style: italic;">//</span><span style="color: #9E9A95; font-style: italic;">where does 32 come from? RTFM!
+</span>  {
+    freq = 100;
+  }
+
+  delay(10);
+} 
+</pre>
+</div>
+
+<ul class="org-ul">
+<li>Question: how can I invert this glissando?</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge86c66b" class="outline-4">
+<h4 id="orge86c66b"><span class="section-number-4">9.0.4.</span> 7.4 EXAMPLE 4</h4>
+<div class="outline-text-4" id="text-9-0-4">
+<ul class="org-ul">
+<li>Modulate your modulators&#x2026;
+<ul class="org-ul">
+<li>Compare this to <a href="https://github.com/magnoCaliman/workshopsHEMU/blob/master/workshopsHEMU_arduino.org#53-example-3">example 3 on item 5.3</a></li>
+</ul></li>
+</ul>
+<div class="org-src-container">
+<pre class="src src-c"><span style="color: #605A52; font-style: italic;">int</span> <span style="color: #556995;">pinSpeaker</span> = 7;
+<span style="color: #605A52; font-style: italic;">int</span> <span style="color: #556995;">randMin</span> = 17000;
+
+<span style="color: #605A52; font-style: italic;">void</span> <span style="color: #605A52; font-style: italic;">setup</span>()
+{}
+
+<span style="color: #605A52; font-style: italic;">void</span> <span style="color: #605A52; font-style: italic;">loop</span>()
+{
+  tone(pinSpeaker, random(randMin, 20000));
+
+  randMin = randMin - 1;
+}
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org9563797" class="outline-2">
+<h2 id="org9563797"><span class="section-number-2">10.</span> 8. TUDO JUNTO E MISTURADO</h2>
+<div class="outline-text-2" id="text-10">
+<ul class="org-ul">
+<li>This code uses all the concepts shown up until now, applied to a single example. How?</li>
+</ul>
+
+<div class="org-src-container">
+<pre class="src src-c"><span style="color: #605A52; font-style: italic;">int</span> <span style="color: #556995;">pinSpeaker</span> = 7;
+<span style="color: #605A52; font-style: italic;">int</span> <span style="color: #556995;">delayTime</span> = 100;
+<span style="color: #605A52; font-style: italic;">int</span> <span style="color: #556995;">dur</span> = 90;
+<span style="color: #605A52; font-style: italic;">int</span> <span style="color: #556995;">randMax</span> = 55;
+
+<span style="color: #605A52; font-style: italic;">void</span> <span style="color: #605A52; font-style: italic;">setup</span>()
+{}
+
+<span style="color: #605A52; font-style: italic;">void</span> <span style="color: #605A52; font-style: italic;">loop</span>()
+{
+  <span style="color: #605A52; font-style: italic;">int</span> <span style="color: #556995;">freqGliss</span> = random(50, randMax);
+
+  tone(pinSpeaker, freqGliss, dur);
+  delay(delayTime);
+
+  randMax = randMax + 10;
+
+  <span style="color: #83577D;">if</span> (randMax &gt; 1000)
+  {
+    randMax = 55;  
+  }
+}
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Created: 2026-10-03 Sat 18:09</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

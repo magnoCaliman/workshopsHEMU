@@ -1,3 +1,5 @@
+#+OPTIONS: toc:nil
+
 * 0. Arduino?
 - What is it?
   - https://www.arduino.cc/
@@ -19,8 +21,8 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
 
 - If the installation was sucessfull you should now have a program called ~Arduino~ in your list of programs, which when opened looks something like this. That means you are all set.
 
+#+ATTR_HTML: :width 80%
 [[./assets/ide.png]]
-
 
 * 1. BLINK
 1. Open a new Arduino IDE, delete everything, copy and paste the code below
@@ -57,6 +59,7 @@ void loop()
 * 2. ~tone()~
 
 *** 2.1 CIRCUIT
+#+ATTR_HTML: :width 80%
 [[./assets/tone_02.png]]
 
 *** 2.2 EXAMPLE
