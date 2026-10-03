@@ -1,53 +1,53 @@
 
 # Table of Contents
 
-1.  [0. Arduino?](#org48ec711)
-        1.  [0.1 INSTALLATION](#org272fad9)
-2.  [1. BLINK](#org6dbd414)
-        1.  [1.1 EXAMPLE](#orgd542abc)
-        2.  [1.2 NOTES](#org1c4fe10)
-        3.  [1.3 MODS](#org3c16df0)
-3.  [2. `tone()`](#orgcaf3eda)
-        1.  [2.1 CIRCUIT](#org5f2b978)
-        2.  [2.2 EXAMPLE](#orgadcea95)
-        3.  [2.3 NOTES](#org4994674)
-        4.  [2.4 MODS](#orgfed4c86)
-        5.  [2.5 TO THINK&#x2026;](#orge9ddec0)
-4.  [3. `delay()`](#org7529cb9)
-    1.  [3.1 EXAMPLE 1](#org59f0f5b)
-    2.  [3.2 MODS](#orgcca8326)
-    3.  [3.3 EXAMPLE 2](#org762e75e)
-    4.  [3.4 NOTES](#org6249367)
-    5.  [3.5 TO THINK&#x2026;](#orgddebb2d)
-5.  [4. VARIABLES](#org8440319)
-    1.  [4.1 EXAMPLE 1](#org94a2765)
-        1.  [4.1.2 NOTES](#orgb04b6dd)
-        2.  [4.1.3 MODS](#org08754b6)
-    2.  [4.2 EXAMPLE 2](#orgce47b99)
-    3.  [4.3 EXAMPLE 3](#orgb635854)
-    4.  [4.4 MODS](#orge52f4e0)
-    5.  [4.5 TO THINK&#x2026;](#org9d66dcd)
-6.  [5. `random()`](#org911acc6)
-        1.  [5.1 EXAMPLE 1](#org610982b)
-        2.  [5.2 EXAMPLE 2](#org68cb10e)
-        3.  [5.3 EXAMPLE 3](#org3b23541)
-7.  [And now, for something completely different&#x2026;](#orge843653)
-8.  [6. `if()`](#orgc27b56e)
-    1.  [6.1 EXAMPLE 1](#orgdfa4b25)
-        1.  [6.1.1 NOTES](#orgcb92b10)
-    2.  [6.2 EXAMPLE 2](#org25987ea)
-    3.  [6.3 EXAMPLE 3](#org8ea3514)
-    4.  [6.4 EXAMPLE 4](#org3bb2ff7)
-        1.  [6.3.1 NOTES](#org65089c5)
-9.  [7. ITERATION](#org37db41b)
-        1.  [7.1 EXAMPLE 1](#orgafa17f9)
-        2.  [7.2 EXAMPLE 2](#orgb084670)
-        3.  [7.3 EXAMPLE 3](#org6bfa850)
-        4.  [7.4 EXAMPLE 4](#orgfe8169a)
-10. [8. TUDO JUNTO E MISTURADO](#org45bca9e)
+1.  [0. Arduino?](#orgac52fa5)
+        1.  [0.1 INSTALLATION](#org0bbc019)
+2.  [1. BLINK](#org2826d2d)
+        1.  [1.1 EXAMPLE](#org1e89e4b)
+        2.  [1.2 NOTES](#org7a6b372)
+        3.  [1.3 MODS](#org3778074)
+3.  [2. `tone()`](#orge9823d0)
+        1.  [2.1 CIRCUIT](#org2f9d434)
+        2.  [2.2 EXAMPLE](#org9b7258c)
+        3.  [2.3 NOTES](#orgc1e0a33)
+        4.  [2.4 MODS](#orgc65eb03)
+        5.  [2.5 TO THINK&#x2026;](#orgedc11af)
+4.  [3. `delay()`](#orge74c3e9)
+    1.  [3.1 EXAMPLE 1](#org1210951)
+    2.  [3.2 MODS](#org8bbf8ed)
+    3.  [3.3 EXAMPLE 2](#orge1b23aa)
+    4.  [3.4 NOTES](#orgd580dc9)
+    5.  [3.5 TO THINK&#x2026;](#orgcd03763)
+5.  [4. VARIABLES](#org52ab06e)
+    1.  [4.1 EXAMPLE 1](#org9db60d2)
+        1.  [4.1.2 NOTES](#orgc6d14b1)
+        2.  [4.1.3 MODS](#orgc9d9a99)
+    2.  [4.2 EXAMPLE 2](#org22e4e73)
+    3.  [4.3 EXAMPLE 3](#org68b4135)
+    4.  [4.4 MODS](#org9736f46)
+    5.  [4.5 TO THINK&#x2026;](#org8c2a7cc)
+6.  [5. `random()`](#org2a94fef)
+        1.  [5.1 EXAMPLE 1](#org9c6352c)
+        2.  [5.2 EXAMPLE 2](#orgbed58d4)
+        3.  [5.3 EXAMPLE 3](#orgf50b7c5)
+7.  [And now, for something completely different&#x2026;](#orgf21d7b7)
+8.  [6. `if()`](#orge31b8f9)
+    1.  [6.1 EXAMPLE 1](#org4a1c76f)
+        1.  [6.1.1 NOTES](#org9d8060f)
+    2.  [6.2 EXAMPLE 2](#org071971e)
+    3.  [6.3 EXAMPLE 3](#orgc320555)
+    4.  [6.4 EXAMPLE 4](#orgb1a1d4f)
+        1.  [6.3.1 NOTES](#orge308d09)
+9.  [7. ITERATION](#orgf2b2bbf)
+        1.  [7.1 EXAMPLE 1](#orge8b3c33)
+        2.  [7.2 EXAMPLE 2](#org69ca35d)
+        3.  [7.3 EXAMPLE 3](#orga83aecb)
+        4.  [7.4 EXAMPLE 4](#orga443ecb)
+10. [8. TUDO JUNTO E MISTURADO](#orga1c0ba7)
 
 
-<a id="org48ec711"></a>
+<a id="orgac52fa5"></a>
 
 # 0. Arduino?
 
@@ -63,7 +63,7 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
     -   Cabinet of Curiosness: <https://youtu.be/JCiXV6b7N0A>
 
 
-<a id="org272fad9"></a>
+<a id="org0bbc019"></a>
 
 ### 0.1 INSTALLATION
 
@@ -78,7 +78,7 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
 ![img](./assets/ide.png)
 
 
-<a id="org6dbd414"></a>
+<a id="org2826d2d"></a>
 
 # 1. BLINK
 
@@ -88,7 +88,7 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
 4.  Upload it
 
 
-<a id="orgd542abc"></a>
+<a id="org1e89e4b"></a>
 
 ### 1.1 EXAMPLE
 
@@ -108,7 +108,7 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
     }
 
 
-<a id="org1c4fe10"></a>
+<a id="org7a6b372"></a>
 
 ### 1.2 NOTES
 
@@ -116,26 +116,26 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
 -   Naming conventions
 
 
-<a id="org3c16df0"></a>
+<a id="org3778074"></a>
 
 ### 1.3 MODS
 
 -   What are you able to change in this code? What are your *entry points*?
 
 
-<a id="orgcaf3eda"></a>
+<a id="orge9823d0"></a>
 
 # 2. `tone()`
 
 
-<a id="org5f2b978"></a>
+<a id="org2f9d434"></a>
 
 ### 2.1 CIRCUIT
 
 ![img](./assets/tone_02.png)
 
 
-<a id="orgadcea95"></a>
+<a id="org9b7258c"></a>
 
 ### 2.2 EXAMPLE
 
@@ -148,7 +148,7 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
     }
 
 
-<a id="org4994674"></a>
+<a id="orgc1e0a33"></a>
 
 ### 2.3 NOTES
 
@@ -158,7 +158,7 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
 -   Syntax conventions
 
 
-<a id="orgfed4c86"></a>
+<a id="orgc65eb03"></a>
 
 ### 2.4 MODS
 
@@ -175,7 +175,7 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
     }
 
 
-<a id="orge9ddec0"></a>
+<a id="orgedc11af"></a>
 
 ### 2.5 TO THINK&#x2026;
 
@@ -186,12 +186,12 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
 -   How does this attitude impacts your creative decisions?
 
 
-<a id="org7529cb9"></a>
+<a id="orge74c3e9"></a>
 
 # 3. `delay()`
 
 
-<a id="org59f0f5b"></a>
+<a id="org1210951"></a>
 
 ## 3.1 EXAMPLE 1
 
@@ -210,7 +210,7 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
     -   What arguments is the `delay()` function expecting?
 
 
-<a id="orgcca8326"></a>
+<a id="org8bbf8ed"></a>
 
 ## 3.2 MODS
 
@@ -227,7 +227,7 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
     }
 
 
-<a id="org762e75e"></a>
+<a id="orge1b23aa"></a>
 
 ## 3.3 EXAMPLE 2
 
@@ -257,7 +257,7 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
     -   Any value!
 
 
-<a id="org6249367"></a>
+<a id="orgd580dc9"></a>
 
 ## 3.4 NOTES
 
@@ -266,7 +266,7 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
 -   Order/execution time
 
 
-<a id="orgddebb2d"></a>
+<a id="orgcd03763"></a>
 
 ## 3.5 TO THINK&#x2026;
 
@@ -276,12 +276,12 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
 -   There's a *non-transparency of the medium*. Engaging with the same material through a different mediator can reveal new things.
 
 
-<a id="org8440319"></a>
+<a id="org52ab06e"></a>
 
 # 4. VARIABLES
 
 
-<a id="org94a2765"></a>
+<a id="org9db60d2"></a>
 
 ## 4.1 EXAMPLE 1
 
@@ -340,7 +340,7 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
     }
 
 
-<a id="orgb04b6dd"></a>
+<a id="orgc6d14b1"></a>
 
 ### 4.1.2 NOTES
 
@@ -348,14 +348,14 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
 -   Naming conventions
 
 
-<a id="org08754b6"></a>
+<a id="orgc9d9a99"></a>
 
 ### 4.1.3 MODS
 
 -   How can you change speaker to pin 7?
 
 
-<a id="orgce47b99"></a>
+<a id="org22e4e73"></a>
 
 ## 4.2 EXAMPLE 2
 
@@ -382,7 +382,7 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
     -   Does the line `tone(pinSpeaker, baseFreq + 100, 90);` changes the value of the variable `baseFreq`? What's the value of `baseFreq` at line 12? And 14?
 
 
-<a id="orgb635854"></a>
+<a id="org68b4135"></a>
 
 ## 4.3 EXAMPLE 3
 
@@ -412,7 +412,7 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
     }
 
 
-<a id="orge52f4e0"></a>
+<a id="org9736f46"></a>
 
 ## 4.4 MODS
 
@@ -421,7 +421,7 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
 -   How can we recreate the example 2 from [item 3.3](https://github.com/magnoCaliman/workshopsHEMU/blob/master/workshopsHEMU_arduino.org#33-example-2) but now using variables that *describe the logic* of how our sequence of frequencies? Is there more than one way of doing it?
 
 
-<a id="org9d66dcd"></a>
+<a id="org8c2a7cc"></a>
 
 ## 4.5 TO THINK&#x2026;
 
@@ -429,12 +429,12 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
     -   Changes the way we navigate the *layers of abstraction* of our material.
 
 
-<a id="org911acc6"></a>
+<a id="org2a94fef"></a>
 
 # 5. `random()`
 
 
-<a id="org610982b"></a>
+<a id="org9c6352c"></a>
 
 ### 5.1 EXAMPLE 1
 
@@ -457,7 +457,7 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
     -   Numeric value as an abstraction
 
 
-<a id="org68cb10e"></a>
+<a id="orgbed58d4"></a>
 
 ### 5.2 EXAMPLE 2
 
@@ -526,7 +526,7 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
     -   You can only acess a piece of data once you store it somewhere.
 
 
-<a id="org3b23541"></a>
+<a id="orgf50b7c5"></a>
 
 ### 5.3 EXAMPLE 3
 
@@ -555,7 +555,7 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
     }
 
 
-<a id="orge843653"></a>
+<a id="orgf21d7b7"></a>
 
 # And now, for something completely different&#x2026;
 
@@ -570,12 +570,12 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
     } 
 
 
-<a id="orgc27b56e"></a>
+<a id="orge31b8f9"></a>
 
 # 6. `if()`
 
 
-<a id="orgdfa4b25"></a>
+<a id="org4a1c76f"></a>
 
 ## 6.1 EXAMPLE 1
 
@@ -597,14 +597,14 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
     } 
 
 
-<a id="orgcb92b10"></a>
+<a id="org9d8060f"></a>
 
 ### 6.1.1 NOTES
 
 -   There are *only* two possible answers for the "condition question": yes or no.
 
 
-<a id="org25987ea"></a>
+<a id="org071971e"></a>
 
 ## 6.2 EXAMPLE 2
 
@@ -628,7 +628,7 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
     } 
 
 
-<a id="org8ea3514"></a>
+<a id="orgc320555"></a>
 
 ## 6.3 EXAMPLE 3
 
@@ -674,7 +674,7 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
     -   Remove the hardcoded values for the duration (the `longDur` and `shortDur` variables) and make the logic for their values dependent solely on the time of the pause between notes.
 
 
-<a id="org3bb2ff7"></a>
+<a id="orgb1a1d4f"></a>
 
 ## 6.4 EXAMPLE 4
 
@@ -708,7 +708,7 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
 -   Why no `int baseFreq` on line 14, but only `baseFreq`?
 
 
-<a id="org65089c5"></a>
+<a id="orge308d09"></a>
 
 ### 6.3.1 NOTES
 
@@ -719,12 +719,12 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
     -   b) "invisible hands" that can modify values and modulate the entry points in your code
 
 
-<a id="org37db41b"></a>
+<a id="orgf2b2bbf"></a>
 
 # 7. ITERATION
 
 
-<a id="orgafa17f9"></a>
+<a id="orge8b3c33"></a>
 
 ### 7.1 EXAMPLE 1
 
@@ -754,7 +754,7 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
         -   "Divide and conquer"
 
 
-<a id="orgb084670"></a>
+<a id="org69ca35d"></a>
 
 ### 7.2 EXAMPLE 2
 
@@ -837,7 +837,7 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
     }
 
 
-<a id="org6bfa850"></a>
+<a id="orga83aecb"></a>
 
 ### 7.3 EXAMPLE 3
 
@@ -867,7 +867,7 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
 -   Question: how can I invert this glissando?
 
 
-<a id="orgfe8169a"></a>
+<a id="orga443ecb"></a>
 
 ### 7.4 EXAMPLE 4
 
@@ -888,7 +888,7 @@ Ecosystem (circuitry + programming language + IDE) that allows us to create logi
     }
 
 
-<a id="org45bca9e"></a>
+<a id="orga1c0ba7"></a>
 
 # 8. TUDO JUNTO E MISTURADO
 

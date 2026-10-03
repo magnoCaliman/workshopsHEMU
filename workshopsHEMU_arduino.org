@@ -607,7 +607,7 @@ void loop()
 
   baseFreq = baseFreq - 10;
 }
-#+end_src  
+#+end_src
 
 - Even simpler...
 #+begin_src c
