@@ -17,12 +17,12 @@ From Arduino workshop tomorrow:
 
 ** THE "STACK"
 
-- Playing a sample on [[https://sonic-pi.net/][Sonic Pi]]
+Playing a sample on [[https://sonic-pi.net/][Sonic Pi]]
 #+begin_src sonicpi
 sample "/home/magno/googleDrive/Minhas_Tralhas/Aulas/HEMU/gitWorkshopsHEMU/assets/notaPiano.wav"
 #+end_src
 
-- And on [[https://supercollider.github.io/][SuperCollider]]
+And on [[https://supercollider.github.io/][SuperCollider]]
 #+begin_src supercollider
 s.boot
 
