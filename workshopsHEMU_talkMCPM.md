@@ -17,11 +17,11 @@ From Arduino workshop tomorrow:
 
 # THE "STACK"
 
--   Playing a sample on [Sonic Pi](https://sonic-pi.net/)
+Playing a sample on [Sonic Pi](https://sonic-pi.net/)
 
     sample "/home/magno/googleDrive/Minhas_Tralhas/Aulas/HEMU/gitWorkshopsHEMU/assets/notaPiano.wav"
 
--   And on [SuperCollider](https://supercollider.github.io/)
+And on [SuperCollider](https://supercollider.github.io/)
 
     s.boot
     
@@ -62,6 +62,4 @@ From Arduino workshop tomorrow:
     -   "Peel the onion" exercise: list technologies you are using in some of your current work. Let's break their stack down.
     -   Find the hidden layers of abstraction, the (maybe not consciously acknowledged) points of negotiation.
     -   What do they say about your own artistic and aesthetic *preferences*?
-
-\#+END<sub>COMMENT</sub>
 
