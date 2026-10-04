@@ -9,7 +9,7 @@ CRAFTING TEXTS IN ARTISTIC RESEARCH: "FICTION" AS OPERATIONAL CONCEPT
 
 # ON "FICTIONING"
 
--   Fiction as operational concept (something you act upon) in artistic research. As method
+-   Fiction as operational concept (something you act upon) in artistic research. As method.
 
 -   Methodology and Artistic Research. Panel session 3: Fictioning (23:50) - <https://www.youtube.com/watch?v=7ltvH5oxzig&t=1431s>
     -   <https://www.forum-online.be/en/issues/october-2022/de-sentimentele-juwelen-van-louise-marie-van-orleans-een-artistieke-reactivatie-van-materiele-herinneringen>
@@ -29,9 +29,9 @@ CRAFTING TEXTS IN ARTISTIC RESEARCH: "FICTION" AS OPERATIONAL CONCEPT
 
 -   de Vet, Annelys (ed.) - Subjective Atlas of Brussels
     -   <https://www.subjectiveeditions.org/atlases-oldshop/p/subjectiveatlasofbrussels>
-    -   don't write oneself out
-        -   false objectivity
-    -   "close slowly" - [ <span class="underline">discourse-to/by whom</span> ]
+    -   Don't write oneself out.
+        -   False objectivity
+    -   "Close slowly" - [ <span class="underline">discourse-to/by whom</span> ]
 
 -   1. Lucia
     -   <https://www.youtube.com/watch?v=TDWLa3oC3J4>
