@@ -6,9 +6,6 @@
 
 _WHY "THE POSSIBILITIES ARE ENDLESS" IS A FALSE STATEMENT; OR, HOW TECHNOLOGY IS NEVER NEUTRAL_
 
-# #+BEGIN_COMMENT
-# * DUMP
-
 From Arduino workshop tomorrow:
 #+begin_quote
 [Arduino is an] ecosystem (*circuitry + programming language + IDE*) that allows us to create logic to interface/control hardware and software
@@ -20,10 +17,12 @@ From Arduino workshop tomorrow:
 
 ** THE "STACK"
 
+- Playing a sample on [[https://sonic-pi.net/][Sonic Pi]]
 #+begin_src sonicpi
 sample "/home/magno/googleDrive/Minhas_Tralhas/Aulas/HEMU/gitWorkshopsHEMU/assets/notaPiano.wav"
 #+end_src
 
+- And on [[https://supercollider.github.io/][SuperCollider]]
 #+begin_src supercollider
 s.boot
 
@@ -63,5 +62,3 @@ s.boot
   - "Peel the onion" exercise: list technologies you are using in some of your current work. Let's break their stack down.
   - Find the hidden layers of abstraction, the (maybe not consciously acknowledged) points of negotiation.
   - What do they say about your own artistic and aesthetic /preferences/?
-
-#+END_COMMENT

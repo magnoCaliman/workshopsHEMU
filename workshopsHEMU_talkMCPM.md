@@ -17,7 +17,11 @@ From Arduino workshop tomorrow:
 
 # THE "STACK"
 
+-   Playing a sample on [Sonic Pi](https://sonic-pi.net/)
+
     sample "/home/magno/googleDrive/Minhas_Tralhas/Aulas/HEMU/gitWorkshopsHEMU/assets/notaPiano.wav"
+
+-   And on [SuperCollider](https://supercollider.github.io/)
 
     s.boot
     
